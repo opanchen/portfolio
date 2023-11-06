@@ -3,7 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import { notFound } from "next/navigation";
-import { AppBar } from "@components/index";
+import { AppBar } from "@components";
+import UIThemeProvider from "./providers";
+import { useTranslations } from "next-intl";
 
 const locales = ["en", "uk"];
 
@@ -29,11 +31,32 @@ const RootLayout: React.FC<Props> = ({
   const isValidLocale = locales.some((cur) => cur === locale);
   if (!isValidLocale) notFound();
 
+  // Passing as props to the client-component:
+  const t = useTranslations("Header");
+  const navContent = [
+    {
+      key: "projects",
+      value: t(`nav.projects`),
+    },
+    {
+      key: "skills",
+      value: t(`nav.skills`),
+    },
+    {
+      key: "contacts",
+      value: t(`nav.contacts`),
+    },
+  ];
+
   return (
     <html lang={locale}>
-      <body className={inter.className}>
-        <AppBar />
-        <main>{children}</main>
+      <body
+        className={`${inter.className} dark:text-white bg-[#eff1ea] dark:bg-[#191919]`}
+      >
+        <UIThemeProvider>
+          <AppBar navContent={navContent} />
+          <main>{children}</main>
+        </UIThemeProvider>
       </body>
     </html>
   );

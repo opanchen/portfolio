@@ -1,0 +1,19 @@
+{
+  "Header": {
+    "nav": {
+      "projects": "Projects",
+      "skills": "Skills",
+      "contacts": "Contacts"
+    }
+  },
+  "Hero": {
+    "title": "Oleh Panchenko",
+    "subtitle": {
+      "1st": "Front-end developer",
+      "2nd": "Full-stack developer"
+    },
+    "tagline": "Cook borsch, write code and never stop exploring.",
+    "summary": "Having almost a year coding experience currently I'm working on learning new skills and expanding my technology stack. My goal is to start a career as a software developer in a reputed company where I can use my strengths to deliver good results and grow personally. I'm particularly excited by the possibility of being surrounded by like-minded professionals who strive for development and are simply pleasant people to communicate with. ",
+    "uploadCV": "Upload CV"
+  }
+}

@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+.transition_prop {
+  @apply transition ease-linear duration-300;
+}
+
 .gradient-primary {
   @apply bg-gradient-to-br from-blue-500 via-pink-700 to-rose-300;
 }

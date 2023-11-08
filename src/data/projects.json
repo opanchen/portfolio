@@ -1,0 +1,260 @@
+[
+  {
+    "title": "CarpTravel",
+    "kind": "individual",
+    "role": "",
+    "startDate": "2023",
+    "description": {
+      "en": "A landing page of a travel company with responsive design built using Next.js, TypeScript and Tailwind CSS.",
+      "uk": ""
+    },
+    "images": ["images/placeholder.jpg"],
+    "urlDemo": "https://nextjs-carptravel-01.vercel.app/",
+    "urlGH": "https://github.com/opanchen/nextjs-carptravel-01",
+    "tech": "TypeScript • Next.js • React.js • Tailwind CSS • CSS",
+    "technologies": [
+      {
+        "name": "TypeScript",
+        "image": ""
+      },
+      {
+        "name": "Next.js",
+        "image": ""
+      },
+      {
+        "name": "React.js",
+        "image": ""
+      },
+      {
+        "name": "Tailwind CSS",
+        "image": ""
+      },
+      {
+        "name": "CSS",
+        "image": ""
+      }
+    ]
+  },
+
+  {
+    "title": "Cinema",
+    "kind": "individual",
+    "role": "",
+    "startDate": "2023",
+    "description": {
+      "en": "Cinema - is a multi-page application for finding movie information, trending, watching trailers and more.",
+      "uk": ""
+    },
+    "images": ["images/placeholder.jpg"],
+    "urlDemo": "https://opanchen.github.io/ts-movies/",
+    "urlGH": "https://github.com/opanchen/ts-movies",
+    "tech": "HTML • CSS • TypeScript • React.js • Redux.js",
+    "technologies": [
+      {
+        "name": "HTML",
+        "image": ""
+      },
+      {
+        "name": "CSS",
+        "image": ""
+      },
+      {
+        "name": "TypeScript",
+        "image": ""
+      },
+      {
+        "name": "React.js",
+        "image": ""
+      },
+      {
+        "name": "Redux.js",
+        "image": ""
+      }
+    ]
+  },
+
+  {
+    "title": "Phonebook App",
+    "kind": "individual",
+    "role": "",
+    "startDate": "2023",
+    "description": {
+      "en": "Create and manage your personal contact list, save favorite ones, send them messages or just do everything you want.",
+      "uk": ""
+    },
+    "images": ["images/placeholder.jpg"],
+    "urlDemo": "https://opanchen.github.io/react-phonebook/",
+    "urlGH": "https://github.com/opanchen/react-phonebook",
+    "tech": "HTML • CSS • JavaScript • React.js • Redux.js • Node.js • Express.js • MongoDB",
+    "technologies": [
+      {
+        "name": "HTML",
+        "image": ""
+      },
+      {
+        "name": "CSS",
+        "image": ""
+      },
+      {
+        "name": "JavaScript",
+        "image": ""
+      },
+      {
+        "name": "React.js",
+        "image": ""
+      },
+      {
+        "name": "Redux.js",
+        "image": ""
+      },
+      {
+        "name": "Node.js",
+        "image": ""
+      },
+      {
+        "name": "Express.js",
+        "image": ""
+      },
+      {
+        "name": "MongoDB",
+        "image": ""
+      }
+    ]
+  },
+
+  {
+    "title": "Task Pro",
+    "kind": "collaboration",
+    "role": "Scrum Master of a front-end team, developer of Welcome & Auth pages, Filters and Drag'n'Drop components. Also answerable for Redux state configuration and bug fixing.",
+    "startDate": "2023",
+    "description": {
+      "en": "Full-stack application that allows you to create and manage your personal task dashboards...",
+      "uk": ""
+    },
+    "images": ["images/placeholder.jpg"],
+    "urlDemo": "https://oleksiifedorenko.github.io/goit-team-03-front/",
+    "urlGH": "https://github.com/OleksiiFedorenko/goit-team-03-front",
+    "tech": "HTML • CSS • JavaScript • React.js • Redux.js • Material UI",
+    "technologies": [
+      {
+        "name": "HTML",
+        "image": ""
+      },
+      {
+        "name": "CSS",
+        "image": ""
+      },
+      {
+        "name": "JavaScript",
+        "image": ""
+      },
+      {
+        "name": "React.js",
+        "image": ""
+      },
+      {
+        "name": "Redux.js",
+        "image": ""
+      },
+      {
+        "name": "Material UI",
+        "image": ""
+      }
+    ]
+  },
+
+  {
+    "title": "News App",
+    "kind": "collaboration",
+    "role": "Scrum Master, developer of header section, burger-menu, theme switcher and custom calendar widget. Overall composing of the initial project structure, general lighthouse audit, code review.",
+    "startDate": "2023",
+    "description": {
+      "en": "A multiple-page application for search for news by various queries (based on NYT API) with the ability to add favourite articles to the user's library and view the current weather forecast. Responsive design, transform effects and burger-menu with theme switcher.",
+      "uk": ""
+    },
+    "images": ["images/placeholder.jpg"],
+    "urlDemo": "https://oleksiifedorenko.github.io/goit-team-project-02/",
+    "urlGH": "https://github.com/OleksiiFedorenko/goit-team-project-02",
+    "tech": "HTML • SASS • JavaScript • Parcel",
+    "technologies": [
+      {
+        "name": "HTML",
+        "image": ""
+      },
+      {
+        "name": "SASS",
+        "image": ""
+      },
+      {
+        "name": "JavaScript",
+        "image": ""
+      },
+      {
+        "name": "Parcel",
+        "image": ""
+      }
+    ]
+  },
+
+  {
+    "title": "MIMIHO",
+    "kind": "collaboration",
+    "role": "Developer, answerable for hero-section with image slider, modal windows, forms, code review and bug fixing.",
+    "startDate": "2022",
+    "description": {
+      "en": "A website for the hotel and restaurant complex with responsive markup and graphic, image sliders, modal windows and attractive design.",
+      "uk": ""
+    },
+    "images": ["images/placeholder.jpg"],
+    "urlDemo": "https://oleksiifedorenko.github.io/goit-team-project-01/",
+    "urlGH": "https://github.com/OleksiiFedorenko/goit-team-project-01",
+    "tech": "HTML • SASS • JavaScript • Parcel",
+    "technologies": [
+      {
+        "name": "HTML",
+        "image": ""
+      },
+      {
+        "name": "SASS",
+        "image": ""
+      },
+      {
+        "name": "JavaScript",
+        "image": ""
+      },
+      {
+        "name": "Parcel",
+        "image": ""
+      }
+    ]
+  },
+
+  {
+    "title": "WebStudio",
+    "kind": "individual",
+    "role": "",
+    "startDate": "2022",
+    "description": {
+      "en": "A website of WebStudio company with responsive markup and graphic, transform effects, modal windows. Markup project.",
+      "uk": ""
+    },
+    "images": ["images/placeholder.jpg"],
+    "urlDemo": "https://opanchen.github.io/goit-markup-hw-08/",
+    "urlGH": "https://github.com/opanchen/goit-markup-hw-08",
+    "tech": "HTML • SASS • JavaScript",
+    "technologies": [
+      {
+        "name": "HTML",
+        "image": ""
+      },
+      {
+        "name": "SASS",
+        "image": ""
+      },
+      {
+        "name": "JavaScript",
+        "image": ""
+      }
+    ]
+  }
+]

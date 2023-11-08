@@ -5,3 +5,6 @@ export { default as MainNav } from "./MainNav";
 export { default as SectionHero } from "./SectionHero";
 export { default as AnimatedTypeLine } from "./AnimatedTypeLine";
 export { default as Container } from "./Container";
+export { default as SectionProjects } from "./SectionProjects";
+export { default as ProjectCard } from "./ProjectCard";
+export { default as ProjectList } from "./ProjectList";

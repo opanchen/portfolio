@@ -1,7 +1,7 @@
 [
   {
     "title": "CarpTravel",
-    "kind": "individual",
+    "tags": ["all", "individual"],
     "role": "",
     "startDate": "2023",
     "description": {
@@ -38,7 +38,7 @@
 
   {
     "title": "Cinema",
-    "kind": "individual",
+    "tags": ["all", "individual"],
     "role": "",
     "startDate": "2023",
     "description": {
@@ -75,7 +75,7 @@
 
   {
     "title": "Phonebook App",
-    "kind": "individual",
+    "tags": ["all", "individual"],
     "role": "",
     "startDate": "2023",
     "description": {
@@ -124,7 +124,7 @@
 
   {
     "title": "Task Pro",
-    "kind": "collaboration",
+    "tags": ["all", "collaborations"],
     "role": "Scrum Master of a front-end team, developer of Welcome & Auth pages, Filters and Drag'n'Drop components. Also answerable for Redux state configuration and bug fixing.",
     "startDate": "2023",
     "description": {
@@ -165,7 +165,7 @@
 
   {
     "title": "News App",
-    "kind": "collaboration",
+    "tags": ["all", "collaborations"],
     "role": "Scrum Master, developer of header section, burger-menu, theme switcher and custom calendar widget. Overall composing of the initial project structure, general lighthouse audit, code review.",
     "startDate": "2023",
     "description": {
@@ -198,7 +198,7 @@
 
   {
     "title": "MIMIHO",
-    "kind": "collaboration",
+    "tags": ["all", "collaborations"],
     "role": "Developer, answerable for hero-section with image slider, modal windows, forms, code review and bug fixing.",
     "startDate": "2022",
     "description": {
@@ -231,7 +231,7 @@
 
   {
     "title": "WebStudio",
-    "kind": "individual",
+    "tags": ["all", "individual"],
     "role": "",
     "startDate": "2022",
     "description": {

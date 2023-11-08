@@ -8,3 +8,4 @@ export { default as Container } from "./Container";
 export { default as SectionProjects } from "./SectionProjects";
 export { default as ProjectCard } from "./ProjectCard";
 export { default as ProjectList } from "./ProjectList";
+export { default as ProjectsTab } from "./ProjectsTab";

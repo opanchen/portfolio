@@ -9,10 +9,10 @@ const SectionHero: React.FC = () => {
   const subtitles = [t("subtitle.1st"), t("subtitle.2nd")];
 
   return (
-    <section className="pt-[54px] md:py-[16px] xl:py-[32px]">
+    <section className="pt-[54px] pb-[16px] md:py-[16px] xl:py-[32px]">
       <Container>
         <div className="sm:relative flex flex-col items-center md:flex-row-reverse gap-[16px] xl:gap-0 xl:justify-between">
-          <div className="shrink-[0] relative w-[240px] h-[240px] xl:w-[400px] xl:h-[400px] rounded-full overflow-hidden gradient-primary sm:self-start">
+          <div className="shrink-[0] relative w-[240px] h-[240px] xl:w-[400px] xl:h-[400px] rounded-full overflow-hidden gradient-primary shadow dark:shadow-zinc-100 sm:self-start">
             <Image
               src="/assets/images/hero.png"
               alt="Picture of the author"
@@ -34,13 +34,17 @@ const SectionHero: React.FC = () => {
             <p className="sm:absolute xl:static top-[200px] right-0 md:bottom-[48px] md:top-auto xl: self-end sm:w-[160px] text-[12px] font-medium text-slate-500 dark:text-zinc-600">
               {t("tagline")}✨
             </p>
-            <p className="font-extralight text-[14px]">{t("summary")}</p>
+            <p className="font-extralight text-[14px] xl:text-[16px]">
+              {t("summary")}
+            </p>
 
             <button
               type="button"
-              className="px-[16px] py-[8px] text-[18px] text-white font-medium uppercase gradient-primary rounded-xl cursor-pointer"
+              className="self-center sm:self-start w-full xl:w-[400px] px-[16px] py-[8px] text-[18px] text-white font-medium uppercase gradient-primary rounded-xl shadow-sm dark:shadow-zinc-100 bg-white dark:bg-neutral-800 hover:shadow-md focus-shadow-md focus:outline-none transition_prop cursor-pointer group"
             >
-              {t("uploadCV")}
+              <span className="inline-block group-hover:scale-110 transition_prop">
+                {t("uploadCV")}
+              </span>
             </button>
           </div>
         </div>

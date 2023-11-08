@@ -1,6 +1,6 @@
 export type Project = {
   title: string;
-  kind: string;
+  tags: string[];
   role: string;
   startDate: string;
   description: {
@@ -15,4 +15,8 @@ export type Project = {
     name: string;
     image: string;
   }[];
+};
+
+export type TabLabels = {
+  [key: string]: string;
 };

@@ -14,6 +14,10 @@
   @apply bg-gradient-to-br from-blue-500 via-pink-700 to-rose-300;
 }
 
+.text-primary {
+  @apply font-extralight text-[14px] xl:text-[16px];
+}
+
 .project-grid_item {
   flex-basis: calc((100% - 16px) / 1);
 }

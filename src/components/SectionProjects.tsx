@@ -16,7 +16,7 @@ const SectionProjects: React.FC = () => {
   return (
     <section id="projects" className="py-[16px]">
       <Container>
-        <div className="outline-dashed">
+        <div className="">
           <h2 className="mb-[16px] text-[20px] font-bold md:text-[32px] uppercase text-slate-500 dark:text-white text-center sm:text-left">
             {t("title")}
           </h2>

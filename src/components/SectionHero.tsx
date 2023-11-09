@@ -34,9 +34,7 @@ const SectionHero: React.FC = () => {
             <p className="sm:absolute xl:static top-[200px] right-0 md:bottom-[48px] md:top-auto xl: self-end sm:w-[160px] text-[12px] font-medium text-slate-500 dark:text-zinc-600">
               {t("tagline")}✨
             </p>
-            <p className="font-extralight text-[14px] xl:text-[16px]">
-              {t("summary")}
-            </p>
+            <p className="text-primary">{t("summary")}</p>
 
             <button
               type="button"

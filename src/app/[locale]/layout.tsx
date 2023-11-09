@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+// import "@devicon.min.css";
 
 import { notFound } from "next/navigation";
 import { AppBar } from "@components";
@@ -50,6 +51,12 @@ const RootLayout: React.FC<Props> = ({
 
   return (
     <html lang={locale}>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+        />
+      </head>
       <body
         className={`${inter.className} dark:text-white bg-[#eff1ea] dark:bg-[#191919]`}
       >

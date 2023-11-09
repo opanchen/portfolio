@@ -8,30 +8,35 @@
       "en": "A landing page of a travel company with responsive design built using Next.js, TypeScript and Tailwind CSS.",
       "uk": ""
     },
-    "images": ["images/placeholder.jpg"],
+    "images": [
+      "images/projects/carptravel/carptravel-01.jpg",
+      "images/projects/carptravel/carptravel-02.jpg",
+      "images/projects/carptravel/carptravel-03.jpg",
+      "images/projects/carptravel/carptravel-04.jpg"
+    ],
     "urlDemo": "https://nextjs-carptravel-01.vercel.app/",
     "urlGH": "https://github.com/opanchen/nextjs-carptravel-01",
     "tech": "TypeScript • Next.js • React.js • Tailwind CSS • CSS",
     "technologies": [
       {
         "name": "TypeScript",
-        "image": ""
+        "image": "devicon-typescript-plain"
       },
       {
         "name": "Next.js",
-        "image": ""
+        "image": "devicon-nextjs-original"
       },
       {
         "name": "React.js",
-        "image": ""
+        "image": "devicon-react-original"
       },
       {
         "name": "Tailwind CSS",
-        "image": ""
+        "image": "devicon-tailwindcss-plain"
       },
       {
         "name": "CSS",
-        "image": ""
+        "image": "devicon-css3-plain"
       }
     ]
   },
@@ -52,23 +57,23 @@
     "technologies": [
       {
         "name": "HTML",
-        "image": ""
+        "image": "devicon-html5-plain"
       },
       {
         "name": "CSS",
-        "image": ""
+        "image": "devicon-css3-plain"
       },
       {
         "name": "TypeScript",
-        "image": ""
+        "image": "devicon-typescript-plain"
       },
       {
         "name": "React.js",
-        "image": ""
+        "image": "devicon-react-original"
       },
       {
         "name": "Redux.js",
-        "image": ""
+        "image": "devicon-redux-original"
       }
     ]
   },
@@ -89,35 +94,35 @@
     "technologies": [
       {
         "name": "HTML",
-        "image": ""
+        "image": "devicon-html5-plain"
       },
       {
         "name": "CSS",
-        "image": ""
+        "image": "devicon-css3-plain"
       },
       {
         "name": "JavaScript",
-        "image": ""
+        "image": "devicon-javascript-plain"
       },
       {
         "name": "React.js",
-        "image": ""
+        "image": "devicon-react-original"
       },
       {
         "name": "Redux.js",
-        "image": ""
+        "image": "devicon-redux-original"
       },
       {
         "name": "Node.js",
-        "image": ""
+        "image": "devicon-nodejs-plain"
       },
       {
         "name": "Express.js",
-        "image": ""
+        "image": "devicon-express-original"
       },
       {
         "name": "MongoDB",
-        "image": ""
+        "image": "devicon-mongodb-plain"
       }
     ]
   },
@@ -138,27 +143,27 @@
     "technologies": [
       {
         "name": "HTML",
-        "image": ""
+        "image": "devicon-html5-plain"
       },
       {
         "name": "CSS",
-        "image": ""
+        "image": "devicon-css3-plain"
       },
       {
         "name": "JavaScript",
-        "image": ""
+        "image": "devicon-javascript-plain"
       },
       {
         "name": "React.js",
-        "image": ""
+        "image": "devicon-react-original"
       },
       {
         "name": "Redux.js",
-        "image": ""
+        "image": "devicon-redux-original"
       },
       {
         "name": "Material UI",
-        "image": ""
+        "image": "devicon-materialui-plain"
       }
     ]
   },
@@ -172,26 +177,31 @@
       "en": "A multiple-page application for search for news by various queries (based on NYT API) with the ability to add favourite articles to the user's library and view the current weather forecast. Responsive design, transform effects and burger-menu with theme switcher.",
       "uk": ""
     },
-    "images": ["images/placeholder.jpg"],
+    "images": [
+      "images/projects/news-app/news-app-01.jpg",
+      "images/projects/news-app/news-app-02.jpg",
+      "images/projects/news-app/news-app-03.jpg",
+      "images/projects/news-app/news-app-04.jpg"
+    ],
     "urlDemo": "https://oleksiifedorenko.github.io/goit-team-project-02/",
     "urlGH": "https://github.com/OleksiiFedorenko/goit-team-project-02",
     "tech": "HTML • SASS • JavaScript • Parcel",
     "technologies": [
       {
         "name": "HTML",
-        "image": ""
+        "image": "devicon-html5-plain"
       },
       {
         "name": "SASS",
-        "image": ""
+        "image": "devicon-sass-original"
       },
       {
         "name": "JavaScript",
-        "image": ""
+        "image": "devicon-javascript-plain"
       },
       {
         "name": "Parcel",
-        "image": ""
+        "image": "images/parcel.png"
       }
     ]
   },
@@ -212,19 +222,19 @@
     "technologies": [
       {
         "name": "HTML",
-        "image": ""
+        "image": "devicon-html5-plain"
       },
       {
         "name": "SASS",
-        "image": ""
+        "image": "devicon-sass-original"
       },
       {
         "name": "JavaScript",
-        "image": ""
+        "image": "devicon-javascript-plain"
       },
       {
         "name": "Parcel",
-        "image": ""
+        "image": "images/parcel.png"
       }
     ]
   },
@@ -245,15 +255,15 @@
     "technologies": [
       {
         "name": "HTML",
-        "image": ""
+        "image": "devicon-html5-plain"
       },
       {
         "name": "SASS",
-        "image": ""
+        "image": "devicon-sass-original"
       },
       {
         "name": "JavaScript",
-        "image": ""
+        "image": "devicon-javascript-plain"
       }
     ]
   }

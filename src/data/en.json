@@ -23,5 +23,20 @@
       "individual": "Individual",
       "collaborations": "Collaborations"
     }
+  },
+  "Skills": {
+    "title": "Skills",
+    "stack": {
+      "title": "Technology stack"
+    },
+    "certificates": {
+      "title": "Certificates",
+      "goitFS": {
+        "title": "FULLSTACK DEVELOPER",
+        "from": "GoIT",
+        "urlDownload": "",
+        "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, ducimus delectus expedita facere, excepturi atque cupiditate explicabo itaque eaque optio labore ipsa? Officia nisi, temporibus voluptatibus exercitationem enim deleniti architecto, animi deserunt aliquid laudantium dolores facilis quidem libero quo quod."
+      }
+    }
   }
 }

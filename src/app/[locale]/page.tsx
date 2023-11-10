@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
-import { SectionHero, SectionProjects } from "@components";
+import { SectionHero, SectionProjects, SectionSkills } from "@components";
 
 export default function Home() {
   // const t = useTranslations("Hero");
@@ -13,6 +13,7 @@ export default function Home() {
     <>
       <SectionHero />
       <SectionProjects />
+      <SectionSkills />
     </>
   );
 }

@@ -11,4 +11,5 @@ export { default as ProjectsTab } from "./ProjectsTab";
 export { default as ProjectList } from "./ProjectList";
 export { default as ProjectCard } from "./ProjectCard";
 export { default as ProjectArticle } from "./ProjectArticle";
+export { default as ProjectLink } from "./ProjectLink";
 export { default as TechLogo } from "./TechLogo";

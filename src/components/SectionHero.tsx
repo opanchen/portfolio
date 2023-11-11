@@ -1,6 +1,8 @@
 import { useTranslations } from "next-intl";
 
 import Image from "next/image";
+import Link from "next/link";
+
 import { AnimatedTypeLine, Container } from "@components";
 
 const SectionHero: React.FC = () => {
@@ -25,7 +27,6 @@ const SectionHero: React.FC = () => {
           <div className="flex flex-col gap-[8px] xl:gap-[16px] xl:w-[560px]">
             <h1 className="text-[36px] md:text-[64px] font-bold text-transparent bg-clip-text gradient-primary">
               <span className="block text-center leading-none mb-[8px] sm:text-left">
-                {" "}
                 {t("title")}
               </span>
 
@@ -36,14 +37,14 @@ const SectionHero: React.FC = () => {
             </p>
             <p className="text-primary">{t("summary")}</p>
 
-            <button
-              type="button"
-              className="self-center sm:self-start w-full xl:w-[400px] px-[16px] py-[8px] text-[18px] text-white font-medium uppercase gradient-primary rounded-xl shadow-sm dark:shadow-zinc-100 bg-white dark:bg-neutral-800 hover:shadow-md focus-shadow-md focus:outline-none transition_prop cursor-pointer group"
+            <Link
+              href="#contacts"
+              className="self-center sm:self-start flex justify-center w-full xl:w-[400px] px-[16px] py-[8px] text-[18px] text-white font-medium uppercase gradient-primary rounded-xl shadow-sm dark:shadow-zinc-100 bg-white dark:bg-neutral-800 hover:shadow-md focus-shadow-md focus:outline-none transition_prop cursor-pointer group"
             >
               <span className="inline-block group-hover:scale-110 transition_prop">
-                {t("uploadCV")}
+                {t("button")}
               </span>
-            </button>
+            </Link>
           </div>
         </div>
       </Container>

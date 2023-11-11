@@ -5,12 +5,13 @@ import { useLocale } from "next-intl";
 import { useForm, SubmitHandler } from "react-hook-form";
 
 import { FormErrorMessage } from "@components";
+import { sendEmail } from "@utils";
 
-interface IFormInput {
+export type FormData = {
   email: string;
   telegram: string;
   message: string;
-}
+};
 
 const ContactForm: React.FC = () => {
   const locale = useLocale();
@@ -20,10 +21,10 @@ const ContactForm: React.FC = () => {
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm<IFormInput>();
+  } = useForm<FormData>();
 
-  const handleFormSubmit: SubmitHandler<IFormInput> = (data) => {
-    console.log("SUBMIT: ", JSON.stringify(data));
+  const handleFormSubmit: SubmitHandler<FormData> = (data) => {
+    sendEmail(data);
     reset();
   };
 

@@ -9,7 +9,8 @@ const StackList: React.FC = () => {
         return (
           <li
             key={name}
-            className="stack-card aspect-[3/4] flex flex-col justify-center items-center gap-[8px] rounded-md shadow dark:shadow-zinc-100 bg-neutral-500 dark:bg-neutral-800 text-white-primary"
+            // className="stack-card aspect-[3/4] flex flex-col justify-center items-center gap-[8px] rounded-md shadow dark:shadow-zinc-100 bg-neutral-500 dark:bg-neutral-800 text-white-primary"
+            className="stack-card aspect-[3/4] flex flex-col justify-center items-center gap-[8px] rounded-md shadow dark:shadow-zinc-100 bg-white-primary text-slate-500 dark:bg-neutral-800 dark:text-white-primary"
           >
             <TechLogo src={image} alt={name} size={54} />
             <p className="font-extralight text-[12px]">{name}</p>

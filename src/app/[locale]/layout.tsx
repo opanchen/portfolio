@@ -4,7 +4,7 @@ import "./globals.css";
 // import "@devicon.min.css";
 
 import { notFound } from "next/navigation";
-import { AppBar } from "@components";
+import { AppBar, Footer } from "@components";
 import UIThemeProvider from "./providers";
 import { useTranslations } from "next-intl";
 
@@ -63,6 +63,7 @@ const RootLayout: React.FC<Props> = ({
         <UIThemeProvider>
           <AppBar navContent={navContent} />
           <main>{children}</main>
+          <Footer />
         </UIThemeProvider>
       </body>
     </html>

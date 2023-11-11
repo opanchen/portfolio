@@ -38,5 +38,16 @@
         "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, ducimus delectus expedita facere, excepturi atque cupiditate explicabo itaque eaque optio labore ipsa? Officia nisi, temporibus voluptatibus exercitationem enim deleniti architecto, animi deserunt aliquid laudantium dolores facilis quidem libero quo quod."
       }
     }
+  },
+  "Contacts": {
+    "title": "Contact me",
+    "link-list": "gh, linkedIn, telegram, email",
+    "links": {
+      "gh": "https://github.com/opanchen",
+      "linkedIn": "https://www.linkedin.com/in/oleh-panchenko/",
+      "telegram": "https://t.me/opanchen",
+      "email": "mailto:opanchen.dev@gmail.com"
+    },
+    "cv": "Download CV"
   }
 }

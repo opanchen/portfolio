@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 
 import { PiStudentLight } from "react-icons/pi";
 
-import { Container, ProjectLink, StackList } from "@components";
+import { Container, IconLink, StackList } from "@components";
 
 const SectionSkills: React.FC = () => {
   const t = useTranslations("Skills");
@@ -30,7 +30,8 @@ const SectionSkills: React.FC = () => {
               {certificates.map((item) => (
                 <li
                   key={item}
-                  className="certificate-card p-[16px] rounded-md shadow dark:shadow-zinc-100 bg-neutral-500 dark:bg-neutral-800 text-white-primary"
+                  //   className="certificate-card p-[16px] rounded-md shadow dark:shadow-zinc-100 bg-neutral-500 dark:bg-neutral-800 text-white-primary"
+                  className="certificate-card p-[16px] rounded-md shadow dark:shadow-zinc-100 bg-white-primary text-slate-500 dark:bg-neutral-800 dark:text-white-primary"
                 >
                   <article className="flex flex-col gap-[8px]">
                     <h4 className="text-center">
@@ -38,7 +39,7 @@ const SectionSkills: React.FC = () => {
                     </h4>
                     <div className="flex items-center justify-between">
                       <p>{t(`certificates.${item}.from`)}</p>
-                      <ProjectLink
+                      <IconLink
                         href={t(`certificates.${item}.urlDownload`)}
                         type="download"
                       />

@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
 import Image from "next/image";
-import { ProjectLink, TechLogo } from "@components";
+import { IconLink, TechLogo } from "@components";
 
 import type { Project } from "@types";
 
@@ -94,10 +94,10 @@ const ProjectArticle: React.FC<Props> = ({ project }: Props) => {
 
       <ul className="flex self-start gap-[8px]">
         <li>
-          <ProjectLink type="demo" href={urlDemo} />
+          <IconLink type="demo" href={urlDemo} />
         </li>
         <li>
-          <ProjectLink type="gh" href={urlGH} />
+          <IconLink type="gh" href={urlGH} />
         </li>
       </ul>
 

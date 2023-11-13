@@ -28,7 +28,16 @@ const ProjectArticle: React.FC<Props> = ({ project }: Props) => {
   const { title, description, role, technologies, images, urlDemo, urlGH } =
     project;
 
-  const slides = [...images, ...images, ...images, ...images];
+  const slides = [
+    ...images,
+    ...images,
+    ...images,
+    ...images,
+    ...images,
+    ...images,
+  ];
+
+  // console.log("slides: ", slides);
 
   return (
     <article className="flex flex-col items-center gap-[16px] p-[16px]">

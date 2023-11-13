@@ -9,6 +9,7 @@ import Image from "next/image";
 import { Modal, ProjectArticle } from "@components";
 
 import type { Project } from "@types";
+import { AnimatePresence } from "framer-motion";
 
 type Props = {
   project: Project;
@@ -60,11 +61,13 @@ const ProjectCard: React.FC<Props> = ({ project }: Props) => {
         <p className="font-extralight text-[12px] text-center">{tech}</p>
       </div>
 
-      {isModalOpen && (
-        <Modal onClose={toggleModal}>
-          <ProjectArticle project={project} />
-        </Modal>
-      )}
+      <AnimatePresence>
+        {isModalOpen && (
+          <Modal onClose={toggleModal}>
+            <ProjectArticle project={project} />
+          </Modal>
+        )}
+      </AnimatePresence>
     </>
   );
 };

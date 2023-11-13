@@ -3,6 +3,8 @@ export { default as ThemeToggle } from "./ThemeToggle";
 export { default as AppBar } from "./AppBar";
 export { default as MainNav } from "./MainNav";
 export { default as SectionHero } from "./SectionHero";
+export { default as HeroImage } from "./HeroImage";
+export { default as HeroAnimationWrapper } from "./HeroAnimationWrapper";
 export { default as AnimatedTypeLine } from "./AnimatedTypeLine";
 export { default as Container } from "./Container";
 export { default as Modal } from "./Modal";

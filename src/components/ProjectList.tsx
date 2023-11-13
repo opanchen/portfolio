@@ -1,6 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useMemo } from "react";
+
+import { motion, useInView } from "framer-motion";
 
 import { ProjectCard, ProjectsTab } from "@components";
 
@@ -14,11 +16,23 @@ type Props = {
 const ProjectList: React.FC<Props> = ({ projects, tabLabels }) => {
   const [filter, setFilter] = useState("all");
 
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   const handleTabClick = (tab: string) => {
     setFilter(tab);
   };
 
-  const filteredProjects = projects.filter(({ tags }) => tags.includes(filter));
+  // const filteredProjects = projects.filter(({ tags }) => tags.includes(filter));
+  const filteredProjects = useMemo(
+    () => projects.filter(({ tags }) => tags.includes(filter)),
+    [filter, projects]
+  );
+
+  const cardVariants = {
+    initial: { y: 50, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
 
   return (
     <div>
@@ -37,11 +51,21 @@ const ProjectList: React.FC<Props> = ({ projects, tabLabels }) => {
         })}
       </ul>
 
-      <ul className="flex flex-col flex-wrap gap-[16px] sm:flex-row md:gap-[32px]">
-        {filteredProjects.map((project) => (
-          <li className="project-grid_item" key={project.title}>
+      <ul
+        ref={ref}
+        className="flex flex-col flex-wrap gap-[16px] sm:flex-row md:gap-[32px]"
+      >
+        {filteredProjects.map((project, index) => (
+          <motion.li
+            variants={cardVariants}
+            initial="initial"
+            animate={isInView ? "animate" : "initial"}
+            transition={{ duration: 0.3, delay: index * 0.4 }}
+            className="project-grid_item"
+            key={project.title}
+          >
             <ProjectCard project={project} />
-          </li>
+          </motion.li>
         ))}
       </ul>
     </div>

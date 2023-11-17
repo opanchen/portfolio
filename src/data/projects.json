@@ -42,7 +42,7 @@
   },
 
   {
-    "title": "Cinema",
+    "title": "Cinema App",
     "tags": ["all", "individual"],
     "role": "",
     "startDate": "2023",
@@ -50,7 +50,15 @@
       "en": "Cinema - is a multi-page application for finding movie information, trending, watching trailers and more.",
       "uk": ""
     },
-    "images": ["images/placeholder.jpg"],
+    "images": [
+      "images/projects/cinema-app/cinema-app-01.jpg",
+      "images/projects/cinema-app/cinema-app-02.jpg",
+      "images/projects/cinema-app/cinema-app-03.jpg",
+      "images/projects/cinema-app/cinema-app-04.jpg",
+      "images/projects/cinema-app/cinema-app-05.jpg",
+      "images/projects/cinema-app/cinema-app-06.jpg",
+      "images/projects/cinema-app/cinema-app-07.jpg"
+    ],
     "urlDemo": "https://opanchen.github.io/ts-movies/",
     "urlGH": "https://github.com/opanchen/ts-movies",
     "tech": "HTML • CSS • TypeScript • React.js • Redux.js",

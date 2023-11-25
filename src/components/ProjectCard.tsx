@@ -38,14 +38,16 @@ const ProjectCard: React.FC<Props> = ({ project }: Props) => {
           />
           <div className="absolute bottom-0 left-0 w-full h-full translate-y-full group-hover:translate-y-0 transition_prop flex items-center justify-center bg-white/80 dark:bg-neutral-800/80">
             <button
-              className="text-slate-500 dark:text-white-primary hover:scale-125 focus:outline-none focus:scale-125 transition_prop"
+              className="eye-btn relative text-slate-500 dark:text-white-primary hover:scale-125 focus:outline-none focus:scale-125 transition_prop"
               type="button"
               onClick={toggleModal}
               aria-label={
                 locale === "en" ? "View info" : "Переглянути інформацію"
               }
             >
-              <FaRegEye size={32} />
+              <span className="block eye-btn_icon">
+                <FaRegEye size={32} />
+              </span>
             </button>
           </div>
         </div>

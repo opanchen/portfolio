@@ -21,3 +21,5 @@ export { default as Footer } from "./Footer";
 export { default as ContactForm } from "./ContactForm";
 export { default as FormErrorMessage } from "./FormErrorMessage";
 export { default as TryzubIcon } from "./TryzubIcon";
+export { default as MobileMenu } from "./MobileMenu";
+export { default as BurgerBtn } from "./BurgerBtn";

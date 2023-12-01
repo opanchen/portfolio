@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { createPortal } from "react-dom";
 import { useLocale } from "next-intl";
 
 import { motion } from "framer-motion";
@@ -61,7 +62,7 @@ const Modal: React.FC<Props> = ({ children, onClose }: Props) => {
   const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.currentTarget === e.target) onClose();
   };
-  return (
+  return createPortal(
     <motion.div
       className="fixed left-0 right-0 top-0 bottom-0 z-20 w-full h-full flex items-center justify-center bg-gray-800/80"
       onClick={handleBackdropClick}
@@ -87,7 +88,8 @@ const Modal: React.FC<Props> = ({ children, onClose }: Props) => {
         </button>
         {children}
       </motion.div>
-    </motion.div>
+    </motion.div>,
+    document.getElementById("modal")!
   );
 };
 

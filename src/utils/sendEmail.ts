@@ -1,9 +1,19 @@
+import { toast } from "react-toastify";
 import type { FormData } from "@components/ContactForm";
 
-export const sendEmail = (data: FormData) => {
-  console.log("SUBMIT: ", JSON.stringify(data));
+export const sendEmail = (data: FormData, lang = "en") => {
+  // console.log("SUBMIT: ", JSON.stringify(data));
 
   const apiEndpoint = "/api/email";
+
+  const textSuccess =
+    lang === "en"
+      ? "Your message was successfully sent."
+      : "Ваше повідомлення було успішно відправлено.";
+  const textError =
+    lang === "en"
+      ? "Something went wrong. Please try again later."
+      : "Щось пішло не так. Будь ласка, повторіть спробу пізніше.";
 
   fetch(apiEndpoint, {
     method: "POST",
@@ -13,11 +23,11 @@ export const sendEmail = (data: FormData) => {
     .then((response) => {
       console.log("response:", response);
 
-      alert(response.message);
+      toast.success(textSuccess);
     })
     .catch((err) => {
       console.log("response with error: ", err);
 
-      alert(err);
+      toast.error(textError);
     });
 };

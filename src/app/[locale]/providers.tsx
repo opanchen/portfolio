@@ -18,7 +18,7 @@ const UIThemeProvider: React.FC<Props> = ({ children }: Props) => {
     return <>{children}</>;
   }
   return (
-    <ThemeProvider attribute="class" enableSystem={false}>
+    <ThemeProvider attribute="class" enableSystem={false} defaultTheme="dark">
       {children}
     </ThemeProvider>
   );

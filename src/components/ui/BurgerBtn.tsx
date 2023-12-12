@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
 import { useLocale } from "next-intl";
+
 import { motion } from "framer-motion";
 
 const path01Variants = {

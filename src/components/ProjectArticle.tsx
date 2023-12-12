@@ -1,7 +1,8 @@
 "use client";
 
-import { useLocale } from "next-intl";
 import { useRef } from "react";
+import Image from "next/image";
+import { useLocale } from "next-intl";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -10,8 +11,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-
-import Image from "next/image";
 import { IconLink, TechLogo } from "@components";
 
 import type { Project } from "@types";
@@ -28,16 +27,7 @@ const ProjectArticle: React.FC<Props> = ({ project }: Props) => {
   const { title, description, role, technologies, images, urlDemo, urlGH } =
     project;
 
-  const slides = [
-    ...images,
-    ...images,
-    ...images,
-    ...images,
-    ...images,
-    ...images,
-  ];
-
-  // console.log("slides: ", slides);
+  const slides = images;
 
   return (
     <article className="flex flex-col items-center gap-[16px] p-[16px]">

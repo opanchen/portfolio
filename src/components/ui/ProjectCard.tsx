@@ -1,15 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useLocale } from "next-intl";
 
+import { AnimatePresence } from "framer-motion";
 import { FaRegEye } from "react-icons/fa";
-import Image from "next/image";
 
 import { Modal, ProjectArticle } from "@components";
 
 import type { Project } from "@types";
-import { AnimatePresence } from "framer-motion";
 
 type Props = {
   project: Project;

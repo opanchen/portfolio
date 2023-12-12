@@ -1,7 +1,7 @@
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 import { ContactForm, Container, IconLink, TryzubIcon } from "@components";
-import Link from "next/link";
 
 const Footer: React.FC = () => {
   const t = useTranslations("Contacts");

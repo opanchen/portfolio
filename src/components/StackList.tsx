@@ -4,7 +4,7 @@ import { useRef } from "react";
 
 import { motion, useInView } from "framer-motion";
 
-import TechLogo from "./TechLogo";
+import TechLogo from "./ui/TechLogo";
 
 import techStack from "../data/tech-stack.json";
 
@@ -29,7 +29,6 @@ const StackList: React.FC = () => {
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: index * 0.4 }}
             key={name}
-            // className="stack-card aspect-[3/4] flex flex-col justify-center items-center gap-[8px] rounded-md shadow dark:shadow-zinc-100 bg-neutral-500 dark:bg-neutral-800 text-white-primary"
             className="stack-card aspect-[3/4] flex flex-col justify-center items-center gap-[8px] rounded-md shadow dark:shadow-zinc-100 bg-white-primary text-slate-500 dark:bg-neutral-800 dark:text-white-primary"
           >
             <TechLogo src={image} alt={name} size={54} />

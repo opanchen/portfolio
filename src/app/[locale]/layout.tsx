@@ -4,7 +4,7 @@ import "./globals.css";
 // import "@devicon.min.css";
 
 import { notFound } from "next/navigation";
-import { AppBar, Footer } from "@components";
+import { AppBar, Footer } from "@components/layout";
 import UIThemeProvider from "./providers";
 import { useTranslations } from "next-intl";
 

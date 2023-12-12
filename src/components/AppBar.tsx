@@ -32,7 +32,7 @@ const AppBar: React.FC<Props> = ({ navContent }: Props) => {
         </div>
 
         <div className="relative">
-          <BurgerBtn onClick={toggleMenu} />
+          <BurgerBtn onClick={toggleMenu} isMenuOpen={isMenuOpen} />
         </div>
       </Container>
 

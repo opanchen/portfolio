@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-import { motion } from "framer-motion";
 import { useLocale } from "next-intl";
+import { motion } from "framer-motion";
 
 const path01Variants = {
   open: { d: "M3.06061 2.99999L21.0606 21" },
@@ -33,12 +33,18 @@ const path02Variants = {
 
 type Props = {
   onClick: () => void;
+  isMenuOpen: boolean;
 };
 
-const BurgerBtn: React.FC<Props> = ({ onClick }: Props) => {
+const BurgerBtn: React.FC<Props> = ({ onClick, isMenuOpen }: Props) => {
   const [animation, setAnimation] = useState<"closed" | "open" | "moving">(
     "closed"
   );
+
+  useEffect(() => {
+    isMenuOpen ? setAnimation("open") : setAnimation("closed");
+  }, [isMenuOpen]);
+
   const locale = useLocale();
 
   const getLabel = () => {

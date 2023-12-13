@@ -30,7 +30,7 @@ const ProjectArticle: React.FC<Props> = ({ project }: Props) => {
   const slides = images;
 
   return (
-    <article className="flex flex-col items-center gap-[16px] p-[16px]">
+    <article className="w-full flex flex-col items-center gap-[16px] p-[16px]">
       <div className="relative w-full flex justify-center px-[16px] md:px-[24px]">
         <Swiper
           className="slider lg:max-w-[400px] 2xl:max-w-full"
@@ -66,7 +66,7 @@ const ProjectArticle: React.FC<Props> = ({ project }: Props) => {
 
         <button
           type="button"
-          className="prev absolute top-1/2 left-[-8px] sm:left-[-16px] md:left-[-20px] lg:left-0 2xl:left-[-20px] translate-y-[-50%] hover:scale-125 focus:outline-none focus:scale-125 transition_prop"
+          className="prev absolute top-1/2 left-[-8px] sm:left-[-16px] md:left-[-16px] lg:left-0 2xl:left-[-20px] translate-y-[-50%] hover:scale-125 focus:outline-none focus:scale-125 transition_prop"
           aria-label={
             locale === "en" ? "Previous picture" : "Попереднє зображення"
           }
@@ -79,7 +79,7 @@ const ProjectArticle: React.FC<Props> = ({ project }: Props) => {
 
         <button
           type="button"
-          className="next absolute top-1/2 right-[-8px] sm:right-[-16px] md:right-[-20px] lg:right-0 2xl:right-[-20px] translate-y-[-50%] hover:scale-125 focus:outline-none focus:scale-125 transition_prop"
+          className="next absolute top-1/2 right-[-8px] sm:right-[-16px] md:right-[-16px] lg:right-0 2xl:right-[-20px] translate-y-[-50%] hover:scale-125 focus:outline-none focus:scale-125 transition_prop"
           aria-label={locale === "en" ? "Next picture" : "Наступне зображення"}
         >
           <BsChevronCompactRight

@@ -100,16 +100,16 @@ const ProjectArticle: React.FC<Props> = ({ project }: Props) => {
         </li>
       </ul>
 
-      <p className="text-primary">
+      <p className="text-primary self-start">
         {locale === "en" ? description.en : description.uk}
       </p>
 
       {role && (
-        <p className="text-primary">
+        <p className="text-primary self-start">
           <span className="font-medium">
             {locale === "en" ? "Position: " : "Посада: "}
           </span>
-          {role}
+          {locale === "en" ? role.en : role.uk}
         </p>
       )}
 
@@ -117,7 +117,7 @@ const ProjectArticle: React.FC<Props> = ({ project }: Props) => {
         {technologies.map(({ name, image }) => (
           <li key={name} className="flex flex-col items-center">
             <TechLogo src={image} alt={name} size={32} />
-            <p className="font-extralight text-[8px]">{name}</p>
+            <p className="font-extralight text-[8px] mt-auto">{name}</p>
           </li>
         ))}
       </ul>

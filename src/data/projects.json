@@ -1,12 +1,73 @@
 [
   {
-    "title": "CarpTravel",
-    "tags": ["all", "individual"],
-    "role": "",
+    "title": "13 Candle Bar",
+    "tags": ["all", "collaborations"],
+    "role": {
+      "en": "Front-end developer answerable for Zustand-state configuration, creating inner components, implementation of dynamic metadata structure, markdown data parsing, some kinds of testing and bug fixing.",
+      "uk": "Front-end розробник, відповідальний за налаштування Zustand-стейту, створення внутрішніх компонентів, реалізацію динамічної структури метаданих, парсинг markdown даних, деякі види поверхневого тестування та баг-фіксинг."
+    },
     "startDate": "2023",
     "description": {
-      "en": "A landing page of a travel company with responsive design built using Next.js, TypeScript and Tailwind CSS.",
-      "uk": ""
+      "en": "The e-commerce website of the online store \"13 Candle Bar\" that was connected to personal administrative panel (Strapi CMS) and built on the basis of Next.js (App Router) architecture using internationalization, state manager, inner interactive elements and general implementation of minimalistic & responsive design, and special system of static content as well.",
+      "uk": "Комерційний веб-сайт онлайн магазину \"13 Candle Bar\", підключений до власної адміністративної панелі (Strapi CMS) і побудований на основі архітектури Next.js (App Router) з використанням інтернаціоналізації, стейт-менеджера, внутрішніх інтерактивних елементів та загальною реалізацією мінімалістичного респонсивного дизайну, а також спеціальною системою статичного контенту."
+    },
+    "images": [
+      "images/projects/13candles/13candles-01.jpg",
+      "images/projects/13candles/13candles-02.jpg",
+      "images/projects/13candles/13candles-03.jpg",
+      "images/projects/13candles/13candles-04.jpg",
+      "images/projects/13candles/13candles-05.jpg",
+      "images/projects/13candles/13candles-06.jpg",
+      "images/projects/13candles/13candles-07.jpg",
+      "images/projects/13candles/13candles-08.jpg",
+      "images/projects/13candles/13candles-09.jpg"
+    ],
+    "urlDemo": "https://13candles-frontend.vercel.app/uk",
+    "urlGH": "https://github.com/SoftRyzen-internship/13candles-frontend",
+    "tech": "TypeScript • Next.js • React.js • Tailwind CSS • CSS • Zustand • GraphQL • Markdown",
+    "technologies": [
+      {
+        "name": "TypeScript",
+        "image": "devicon-typescript-plain"
+      },
+      {
+        "name": "Next.js",
+        "image": "devicon-nextjs-original"
+      },
+      {
+        "name": "React.js",
+        "image": "devicon-react-original"
+      },
+      {
+        "name": "Tailwind CSS",
+        "image": "devicon-tailwindcss-plain"
+      },
+      {
+        "name": "CSS",
+        "image": "devicon-css3-plain"
+      },
+      {
+        "name": "Zustand",
+        "image": "images/zustand.png"
+      },
+      {
+        "name": "GraphQL",
+        "image": "devicon-graphql-plain"
+      },
+      {
+        "name": "Markdown",
+        "image": "devicon-markdown-original"
+      }
+    ]
+  },
+
+  {
+    "title": "CarpTravel",
+    "tags": ["all", "individual"],
+    "startDate": "2023",
+    "description": {
+      "en": "A landing page of a travel company with responsive design, interactive elements & different background images  built using Next.js, TypeScript and Tailwind CSS.",
+      "uk": "Лендинг-сторінка туристичної компанії з респонсивним дизайном, інтерактивними елементами та різними фоновими зображеннями, створена за допомогою Next.js, TypeScript і Tailwind CSS."
     },
     "images": [
       "images/projects/carptravel/carptravel-01.jpg",
@@ -44,11 +105,10 @@
   {
     "title": "Cinema App",
     "tags": ["all", "individual"],
-    "role": "",
     "startDate": "2023",
     "description": {
-      "en": "Cinema - is a multi-page application for finding movie information, trending, watching trailers and more.",
-      "uk": ""
+      "en": "The multiple-page application gives the user an opportunity to find information about movies, follow trends, watch video trailers, save favorite articles in a personal collection based on local storage, etc. This project was inspired by \"TMDB\" API-service and created with React.js & Typescript. Storing genres or movies data was implemented using Redux Toolkit and Redux Persist. Some interactive elements (like movie cast slider or trailer player) were created using React Slick Slider and React Player respectively.",
+      "uk": "Багатосторінковий застосунок дає користувачеві можливість знаходити інформацію про фільми, стежити за трендами, дивитися відео-трейлери, зберігати улюблені статті в особистій колекції, створеній на основі локального сховища браузеру, тощо. Цей проект надихався API-сервісом \"TMDB\" і створювався за допомогою React.js та Typescript. Зберігання та управління даними про жанри або фільми реалізовано за допомогою Redux Toolkit і Redux Persist. Деякі інтерактивні елементи (як слайдер з акторським складом чи програвач тизер-трейлерів) були створені за допомогою React Slick Slider і React Player відповідно."
     },
     "images": [
       "images/projects/cinema-app/cinema-app-01.jpg",
@@ -89,13 +149,17 @@
   {
     "title": "Phonebook App",
     "tags": ["all", "individual"],
-    "role": "",
     "startDate": "2023",
     "description": {
-      "en": "Create and manage your personal contact list, save favorite ones, send them messages or just do everything you want.",
-      "uk": ""
+      "en": "A multi-page application connected to Rest API where user can register, login, create, edit, remove or filter contacts, log out. Also implemented are the possibilities of editing user avatars, sending messages via a one-way communication channel and email verification (using Nodemailer). Responsive design for mobile screen, transform effects and modal windows.",
+      "uk": "Багатосторінковий застосунок, підключений до Rest API, де користувач може реєструватися, заходити та виходити зі свого акаунту, створювати, редагувати, видаляти чи фільтрувати контакти. Також реалізовано можливості змінювати аватар користувача, надсилати повідомлення в односторонньому порядку та верифікацію електронної пошти (використовуючи Nodemailer). Респонсивний дизайн з окремою реалізацією для мобільних екранів, ефекти переходу та модальні вікна."
     },
-    "images": ["images/placeholder.jpg"],
+    "images": [
+      "images/projects/phonebook-app/phonebook-app-01.jpg",
+      "images/projects/phonebook-app/phonebook-app-02.jpg",
+      "images/projects/phonebook-app/phonebook-app-03.jpg",
+      "images/projects/phonebook-app/phonebook-app-04.jpg"
+    ],
     "urlDemo": "https://opanchen.github.io/react-phonebook/",
     "urlGH": "https://github.com/opanchen/react-phonebook",
     "tech": "HTML • CSS • JavaScript • React.js • Redux.js • Node.js • Express.js • MongoDB",
@@ -138,13 +202,24 @@
   {
     "title": "Task Pro",
     "tags": ["all", "collaborations"],
-    "role": "Scrum Master of a front-end team, developer of Welcome & Auth pages, Filters and Drag'n'Drop components. Also answerable for Redux state configuration and bug fixing.",
+    "role": {
+      "en": "Scrum Master of a front-end team, developer of Welcome & Auth pages, filters and Drag'n'Drop system. Also answerable for Redux state configuration and bug fixing.",
+      "uk": "Скрам майстер front-end команди, розробник стартової сторінки і сторінки аутентифікації, фільтрів та функціоналу Drag'n'Drop. Також відповідальний за налаштування стейту Redux і баг-фіксинг."
+    },
     "startDate": "2023",
     "description": {
-      "en": "Full-stack application that allows you to create and manage your personal task dashboards...",
-      "uk": ""
+      "en": "A multi-page MERN-stack application for advanced task management with ability to use multiple theme-modes, create different dashboards or edit personal users profile. Responsive mobile-friendly design, transform effects, data storing and general connection to Rest API.",
+      "uk": "Багатосторінковий MERN-стек застосунок для просунотого управління задачами з можливістю використовувати декілька тем інтерфейсу, створювати різні дошки або редагувати профіль користувача. Респонсивний, мобільно-орієнтований дизайн, ефекти трансформацій, збереження даних та загальне підключення до Rest API."
     },
-    "images": ["images/placeholder.jpg"],
+    "images": [
+      "images/projects/task-pro/task-pro-01.jpg",
+      "images/projects/task-pro/task-pro-02.jpg",
+      "images/projects/task-pro/task-pro-03.jpg",
+      "images/projects/task-pro/task-pro-04.jpg",
+      "images/projects/task-pro/task-pro-05.jpg",
+      "images/projects/task-pro/task-pro-06.jpg",
+      "images/projects/task-pro/task-pro-07.jpg"
+    ],
     "urlDemo": "https://oleksiifedorenko.github.io/goit-team-03-front/",
     "urlGH": "https://github.com/OleksiiFedorenko/goit-team-03-front",
     "tech": "HTML • CSS • JavaScript • React.js • Redux.js • Material UI",
@@ -179,11 +254,14 @@
   {
     "title": "News App",
     "tags": ["all", "collaborations"],
-    "role": "Scrum Master, developer of header section, burger-menu, theme switcher and custom calendar widget. Overall composing of the initial project structure, general lighthouse audit, code review.",
+    "role": {
+      "en": "Scrum Master, developer of header section, burger-menu, theme switcher and custom calendar widget. Overall composing of the initial project structure, general Lighthouse audit, code review.",
+      "uk": "Скрам майстер, розробник хедеру, бургер-меню, перемикача теми інтерфейсу та кастомного віджету календаря. Загальне налаштування початкової структури проекту, підсумковий аудит показників Lighthouse, перевірка коду."
+    },
     "startDate": "2023",
     "description": {
-      "en": "A multiple-page application for search for news by various queries (based on NYT API) with the ability to add favourite articles to the user's library and view the current weather forecast. Responsive design, transform effects and burger-menu with theme switcher.",
-      "uk": ""
+      "en": "A multiple-page application for search for news by various queries (based on \"NYT\" API) with the ability to add favourite articles to the user's library and view the current weather forecast. Responsive design, transform effects and burger-menu with theme switcher.",
+      "uk": "Багатосторінковий застосунок для пошуку новин за різними запитами (на базі \"NYT\" API) з можливістю зберігати улюблені статті в бібліотеці користувача і переглядати поточний прогноз погоди. Респонсивний дизайн, трансформ-ефекти та бургер-меню з перемикачем теми інтерфейсу."
     },
     "images": [
       "images/projects/news-app/news-app-01.jpg",
@@ -217,13 +295,25 @@
   {
     "title": "MIMIHO",
     "tags": ["all", "collaborations"],
-    "role": "Developer, answerable for hero-section with image slider, modal windows, forms, code review and bug fixing.",
+    "role": {
+      "en": "Markup developer, answerable for header, hero-section with background image slider, modal windows, forms, code review and bug fixing.",
+      "uk": "Markup розробник, відповідальний за хедер, секцію Hero зі слайдером фонових зображень, модальні вікна, форми, перевірку коду та баг-фіксинг."
+    },
     "startDate": "2022",
     "description": {
       "en": "A website for the hotel and restaurant complex with responsive markup and graphic, image sliders, modal windows and attractive design.",
-      "uk": ""
+      "uk": "Веб-сайт для готельно-ресторанного комплексу з респонсивними версткою та графікою, слайдерами зображень, модальними вікнами і привабливим дизайном."
     },
-    "images": ["images/placeholder.jpg"],
+    "images": [
+      "images/projects/mimiho/mimiho-01.jpg",
+      "images/projects/mimiho/mimiho-02.jpg",
+      "images/projects/mimiho/mimiho-03.jpg",
+      "images/projects/mimiho/mimiho-04.jpg",
+      "images/projects/mimiho/mimiho-05.jpg",
+      "images/projects/mimiho/mimiho-06.jpg",
+      "images/projects/mimiho/mimiho-07.jpg",
+      "images/projects/mimiho/mimiho-08.jpg"
+    ],
     "urlDemo": "https://oleksiifedorenko.github.io/goit-team-project-01/",
     "urlGH": "https://github.com/OleksiiFedorenko/goit-team-project-01",
     "tech": "HTML • SASS • JavaScript • Parcel",
@@ -250,13 +340,17 @@
   {
     "title": "WebStudio",
     "tags": ["all", "individual"],
-    "role": "",
     "startDate": "2022",
     "description": {
       "en": "A website of WebStudio company with responsive markup and graphic, transform effects, modal windows. Markup project.",
-      "uk": ""
+      "uk": "Вебсайт веб-студії з респонсивними версткою та графікою, трансформ-ефектами, модальними вікнами. Проект з верстки."
     },
-    "images": ["images/placeholder.jpg"],
+    "images": [
+      "images/projects/webstudio/webstudio-01.jpg",
+      "images/projects/webstudio/webstudio-02.jpg",
+      "images/projects/webstudio/webstudio-03.jpg",
+      "images/projects/webstudio/webstudio-04.jpg"
+    ],
     "urlDemo": "https://opanchen.github.io/goit-markup-hw-08/",
     "urlGH": "https://github.com/opanchen/goit-markup-hw-08",
     "tech": "HTML • SASS • JavaScript",

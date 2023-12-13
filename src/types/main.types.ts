@@ -1,7 +1,10 @@
 export type Project = {
   title: string;
   tags: string[];
-  role: string;
+  role?: {
+    en: string;
+    uk: string;
+  };
   startDate: string;
   description: {
     en: string;

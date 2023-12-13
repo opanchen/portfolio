@@ -25,8 +25,7 @@
 .form_label {
   @apply relative flex flex-col gap-[4px] xl:gap-[6px] font-normal text-gray-primary dark:text-white-primary;
 }
-
-.submit-btn_text-outline::after {
+phonebook-app- .submit-btn_text-outline::after {
   content: "";
   position: absolute;
   left: 0;

@@ -64,6 +64,7 @@ const RootLayout: React.FC<Props> = ({
           <AppBar navContent={navContent} />
           <main>{children}</main>
           <Footer />
+
           <div id="modal" />
         </UIThemeProvider>
       </body>

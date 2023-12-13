@@ -23,7 +23,7 @@ const AppBar: React.FC<Props> = ({ navContent }: Props) => {
   };
 
   return (
-    <header className="relative md:border-b-[1px]">
+    <header>
       <Container>
         <div className="hidden md:flex items-center gap-[16px] md:gap-[32px] py-[16px]">
           <LangToggle />

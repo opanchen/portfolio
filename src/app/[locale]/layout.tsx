@@ -58,7 +58,7 @@ const RootLayout: React.FC<Props> = ({
         />
       </head>
       <body
-        className={`${inter.className} dark:text-white bg-[#eff1ea] dark:bg-[#191919]`}
+        className={`${inter.className} dark:text-white-primary bg-white-secondary dark:bg-black-primary`}
       >
         <UIThemeProvider>
           <AppBar navContent={navContent} />

@@ -29,7 +29,7 @@ const StackList: React.FC = () => {
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: index * 0.4 }}
             key={name}
-            className="stack-card aspect-[3/4] flex flex-col justify-center items-center gap-[8px] rounded-md shadow dark:shadow-zinc-100 bg-white-primary text-slate-500 dark:bg-neutral-800 dark:text-white-primary"
+            className="stack-card aspect-[3/4] flex flex-col justify-center items-center gap-[8px] rounded-md shadow dark:shadow-white-shadow bg-white-primary text-gray-primary dark:bg-black-secondary dark:text-white-primary"
           >
             <TechLogo src={image} alt={name} size={54} />
             <p className="font-extralight text-[12px]">{name}</p>

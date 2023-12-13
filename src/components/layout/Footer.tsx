@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
   return (
     <footer id="contacts" className="py-[16px]">
       <Container>
-        <p className="text-[20px] font-bold md:text-[32px] uppercase text-slate-500 dark:text-white text-center sm:text-left">
+        <p className="text-[20px] font-bold md:text-[32px] uppercase text-gray-primary dark:text-white-primary text-center sm:text-left">
           Contact me
         </p>
         <div className="mb-[16px] xl:mb-[32px] flex flex-col gap-[16px] md:flex-row md:gap-[32px] md:justify-end xl:justify-between">
@@ -31,8 +31,7 @@ const Footer: React.FC = () => {
             </ul>
 
             <button
-              //   className="w-full pre-sm:w-[240px] md:w-full xl:w-[284px] p-[16px] rounded-md shadow dark:shadow-zinc-100 bg-neutral-500 dark:bg-neutral-800 text-white-primary"
-              className="md:mb-auto w-full pre-sm:w-[240px] md:w-full xl:w-[284px] p-[16px] rounded-md shadow dark:shadow-zinc-100 bg-white-primary text-slate-500 dark:bg-neutral-800 dark:text-white-primary hover:scale-105 focus:outline-none focus:scale-105 transition_prop"
+              className="md:mb-auto w-full pre-sm:w-[240px] md:w-full xl:w-[284px] p-[16px] rounded-md shadow dark:shadow-white-shadow bg-white-primary text-gray-primary dark:bg-black-secondary dark:text-white-primary hover:scale-105 focus:outline-none focus:scale-105 transition_prop"
               type="button"
             >
               {t("cv")}
@@ -42,7 +41,7 @@ const Footer: React.FC = () => {
               href={t("links.email")}
               target="_blank"
               rel="nofollow noopener noreferrer"
-              className="font-normal not-italic text-[14px] text-slate-500 dark:text-zinc-600 focus:outline-none focus:underline hover:underline underline-offset-4 transition_prop"
+              className="font-normal not-italic text-[14px] text-gray-primary dark:text-gray-secondary focus:outline-none focus:underline hover:underline underline-offset-4 transition_prop"
             >
               opanchen.dev@gmail.com
             </Link>

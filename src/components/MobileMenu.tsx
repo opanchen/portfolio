@@ -45,7 +45,7 @@ const MobileMenu: React.FC<Props> = ({ navContent, closeMenu }: Props) => {
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="fixed z-[1] top-0 left-0 bottom-0 w-screen h-screen  bg-[#eff1ea] dark:bg-[#191919] md:hidden"
+      className="fixed z-[1] top-0 left-0 bottom-0 w-screen h-screen  bg-white-secondary dark:bg-black-primary md:hidden"
     >
       <div className="flex flex-col items-center justify-center gap-[80px] w-full h-full">
         <div className="w-[280px] sm:w-full px-[20px] flex items-center justify-between sm:justify-center  sm:gap-[160px]">

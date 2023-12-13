@@ -62,7 +62,7 @@ const ContactForm: React.FC = () => {
                 },
               })}
               type="email"
-              aria-invalid={errors.email ? "true" : "false"}
+              aria-invalid={errors.email ? true : false}
               placeholder="johndoe@email.com"
               className="form_input"
             />
@@ -91,7 +91,7 @@ const ContactForm: React.FC = () => {
                 locale === "en" ? "Message is required" : "Обовʼязкове поле"
               }`,
             })}
-            aria-invalid={errors.message ? "true" : "false"}
+            aria-invalid={errors.message ? true : false}
           />
           {errors.message?.message && (
             <FormErrorMessage message={errors.message.message} />

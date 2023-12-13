@@ -31,17 +31,17 @@ const ThemeToggle: React.FC = () => {
   return (
     <>
       <button
-        className="shadow-sm hover:shadow hover:scale-110 focus:outline-none    focus:shadow focus:scale-110 transition_prop dark:shadow-zinc-100 relative w-[56px] h-[24px] p-[4px] flex items-center cursor-pointer bg-sky-200 dark:bg-gray-900 rounded-full"
+        className="shadow-sm hover:shadow hover:scale-110 focus:outline-none focus:shadow focus:scale-110 transition_prop dark:shadow-white-shadow relative w-[56px] h-[24px] p-[4px] flex items-center cursor-pointer bg-blue-sky dark:bg-black-primary rounded-full"
         onClick={toggleTheme}
         type="button"
         aria-label={label}
       >
-        <FaMoon className={"text-white"} size={16} />
+        <FaMoon className={"text-white-primary"} size={16} />
         <div
-          className="absolute bg-white w-[20px] h-[20px] rounded-full shadow-md transform transition-transform duration-300"
+          className="absolute bg-white-primary w-[20px] h-[20px] rounded-full shadow-md transform transition-transform duration-300"
           style={theme === "dark" ? { left: "2px" } : { right: "2px" }}
         ></div>
-        <BsSunFill className={"ml-auto text-yellow-400"} size={16} />
+        <BsSunFill className={"ml-auto text-yellow"} size={16} />
       </button>
     </>
   );

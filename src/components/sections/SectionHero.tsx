@@ -29,14 +29,14 @@ const SectionHero: React.FC = () => {
 
                 <AnimatedTypeLine text={subtitles} />
               </h1>
-              <p className="sm:absolute xl:static top-[200px] right-0 md:bottom-[48px] md:top-auto xl: self-end sm:w-[160px] text-[12px] font-medium text-slate-500 dark:text-zinc-600">
+              <p className="sm:absolute xl:static top-[200px] right-0 md:bottom-[48px] md:top-auto xl: self-end sm:w-[160px] text-[12px] font-medium text-gray-primary dark:text-gray-secondary">
                 {t("tagline")}✨
               </p>
               <p className="text-primary">{t("summary")}</p>
 
               <Link
                 href="#contacts"
-                className="self-center sm:self-start flex justify-center w-full xl:w-[400px] px-[16px] py-[8px] text-[18px] text-white font-medium uppercase gradient-primary rounded-xl shadow-sm dark:shadow-zinc-100 bg-white dark:bg-neutral-800 hover:shadow-md focus-shadow-md focus:outline-none transition_prop cursor-pointer group"
+                className="self-center sm:self-start flex justify-center w-full xl:w-[400px] px-[16px] py-[8px] text-[18px] text-white-primary font-medium uppercase gradient-primary rounded-xl shadow-sm dark:shadow-white-shadow bg-white dark:bg-black-secondary hover:shadow-md focus-shadow-md focus:outline-none transition_prop cursor-pointer group"
               >
                 <span className="inline-block group-hover:scale-110 transition_prop">
                   {t("button")}

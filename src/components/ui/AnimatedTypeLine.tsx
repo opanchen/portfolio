@@ -20,7 +20,7 @@ const AnimatedTypeLine: React.FC<Props> = ({ text }: Props) => {
       wrapper="span"
       cursor={false}
       speed={25}
-      className="block text-slate-500 dark:text-white text-[20px] md:text-[32px] uppercase"
+      className="block text-gray-primary dark:text-white-primary text-[20px] md:text-[32px] uppercase"
       repeat={Infinity}
     />
   );

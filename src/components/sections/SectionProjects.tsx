@@ -17,7 +17,7 @@ const SectionProjects: React.FC = () => {
     <section id="projects" className="py-[16px]">
       <Container>
         <div className="">
-          <h2 className="mb-[16px] text-[20px] font-bold md:text-[32px] uppercase text-slate-500 dark:text-white text-center sm:text-left">
+          <h2 className="mb-[16px] text-section-title text-center sm:text-left">
             {t("title")}
           </h2>
 

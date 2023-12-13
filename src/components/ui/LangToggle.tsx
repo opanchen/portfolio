@@ -45,7 +45,7 @@ const LangToggle: React.FC = () => {
               className="block cover"
             />
             <div
-              className={`absolute top-0 bottom-0 left-0 w-full h-full bg-[#181818] bg-opacity-[0.7] ${
+              className={`absolute top-0 bottom-0 left-0 w-full h-full bg-black-primary bg-opacity-[0.7] ${
                 currentLocale === "en" ? "block" : " hidden"
               }`}
             ></div>
@@ -72,7 +72,7 @@ const LangToggle: React.FC = () => {
               className="block cover"
             />
             <div
-              className={`absolute top-0 bottom-0 left-0 w-full h-full bg-[#181818] bg-opacity-[0.7] ${
+              className={`absolute top-0 bottom-0 left-0 w-full h-full bg-black-primary bg-opacity-[0.7] ${
                 currentLocale === "uk" ? "block" : "hidden"
               }`}
             ></div>

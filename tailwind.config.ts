@@ -17,7 +17,23 @@ const config: Config = {
         "2xl": "1536px",
       },
       colors: {
-        "white-primary": "rgb(255, 255, 255)",
+        white: {
+          primary: "rgb(255, 255, 255)",
+          secondary: "#eff1ea",
+          shadow: "#f4f4f5",
+        },
+        black: {
+          primary: "#191919",
+          secondary: "rgb(38 38 38)", // neutral-800
+        },
+        gray: {
+          primary: "rgb(100 116 139)", // slate-500
+          secondary: "rgb(82 82 91)", // zinc-600
+        },
+        blue: {
+          sky: "rgb(186, 230, 253)",
+        },
+        yellow: "rgb(250 204 21)",
       },
     },
   },

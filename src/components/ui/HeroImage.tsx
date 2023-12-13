@@ -10,7 +10,7 @@ const HeroImage: React.FC = () => {
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
-      className="shrink-[0] relative w-[240px] h-[240px] xl:w-[400px] xl:h-[400px] rounded-full overflow-hidden gradient-primary shadow dark:shadow-zinc-100 sm:self-start"
+      className="shrink-[0] relative w-[240px] h-[240px] xl:w-[400px] xl:h-[400px] rounded-full overflow-hidden gradient-primary shadow dark:shadow-white-shadow sm:self-start"
     >
       <Image
         src="/assets/images/hero.png"

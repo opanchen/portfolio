@@ -23,7 +23,6 @@ const ProjectList: React.FC<Props> = ({ projects, tabLabels }) => {
     setFilter(tab);
   };
 
-  // const filteredProjects = projects.filter(({ tags }) => tags.includes(filter));
   const filteredProjects = useMemo(
     () => projects.filter(({ tags }) => tags.includes(filter)),
     [filter, projects]

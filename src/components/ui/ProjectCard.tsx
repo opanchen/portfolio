@@ -27,7 +27,7 @@ const ProjectCard: React.FC<Props> = ({ project }: Props) => {
   const { title, images, startDate, tech } = project;
   return (
     <>
-      <div className="group flex flex-col w-full h-full p-[8px] sm:p-[16px] rounded-md shadow dark:shadow-zinc-100 bg-white dark:bg-neutral-800 hover:scale-105 focus:outline-none focus:scale-105 transition_prop">
+      <div className="group flex flex-col w-full h-full p-[8px] sm:p-[16px] rounded-md shadow dark:shadow-white-shadow bg-white-primary dark:bg-black-secondary hover:scale-105 focus:outline-none focus:scale-105 transition_prop">
         <div className="relative aspect-[4/3] overflow-hidden">
           <Image
             src={`/assets/${images[0]}`}
@@ -36,9 +36,9 @@ const ProjectCard: React.FC<Props> = ({ project }: Props) => {
             height={300}
             className="w-full h-full object-cover"
           />
-          <div className="absolute bottom-0 left-0 w-full h-full translate-y-full group-hover:translate-y-0 transition_prop flex items-center justify-center bg-white/80 dark:bg-neutral-800/80">
+          <div className="absolute bottom-0 left-0 w-full h-full translate-y-full group-hover:translate-y-0 transition_prop flex items-center justify-center bg-white-primary/80 dark:bg-black-secondary/80">
             <button
-              className="eye-btn relative text-slate-500 dark:text-white-primary hover:scale-125 focus:outline-none focus:scale-125 transition_prop"
+              className="eye-btn relative text-gray-primary dark:text-white-primary hover:scale-125 focus:outline-none focus:scale-125 transition_prop"
               type="button"
               onClick={toggleModal}
               aria-label={
@@ -56,7 +56,7 @@ const ProjectCard: React.FC<Props> = ({ project }: Props) => {
           {startDate}
         </p>
 
-        <h3 className="mb-8px font-medium text-[16px] md:text-[20px] text-slate-500 dark:text-white text-center">
+        <h3 className="mb-8px font-medium text-[16px] md:text-[20px] text-gray-primary dark:text-white-primary text-center">
           {title}
         </h3>
 

@@ -124,7 +124,7 @@ const IconLink: React.FC<Props> = ({ type, href, size, location }: Props) => {
   };
 
   const footerClassNames =
-    "aspect-square flex items-center justify-center p-[8px] rounded-md shadow dark:shadow-zinc-100 bg-white-primary text-slate-500 dark:bg-neutral-800 dark:text-white-primary focus:outline-none hover:scale-110 focus:scale-110 transition_prop";
+    "aspect-square flex items-center justify-center p-[8px] rounded-md shadow dark:shadow-white-shadow bg-white-primary text-gray-primary dark:bg-black-secondary dark:text-white-primary focus:outline-none hover:scale-110 focus:scale-110 transition_prop";
 
   const classNames =
     location === "footer" ? footerClassNames : "group focus:outline-none";

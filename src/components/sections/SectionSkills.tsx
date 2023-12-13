@@ -12,7 +12,7 @@ const SectionSkills: React.FC = () => {
   return (
     <section id="skills" className="py-[16px]">
       <Container>
-        <h2 className="text-[20px] font-bold md:text-[32px] uppercase text-slate-500 dark:text-white text-center sm:text-left">
+        <h2 className="text-section-title text-center sm:text-left">
           {t("title")}
         </h2>
 
@@ -22,7 +22,7 @@ const SectionSkills: React.FC = () => {
           <StackList />
 
           <div className="grow relative">
-            <h3 className="md:absolute bottom-[100%] left-0 text-center md:text-left text-[20px] font-bold md:text-[32px] uppercase text-slate-500 dark:text-white">
+            <h3 className="md:absolute bottom-[100%] left-0 text-center md:text-left text-section-title">
               {t("certificates.title")}
             </h3>
 
@@ -30,11 +30,10 @@ const SectionSkills: React.FC = () => {
               {certificates.map((item) => (
                 <li
                   key={item}
-                  //   className="certificate-card p-[16px] rounded-md shadow dark:shadow-zinc-100 bg-neutral-500 dark:bg-neutral-800 text-white-primary"
-                  className="certificate-card p-[16px] rounded-md shadow dark:shadow-zinc-100 bg-white-primary text-slate-500 dark:bg-neutral-800 dark:text-white-primary"
+                  className="certificate-card p-[16px] rounded-md shadow dark:shadow-white-shadow bg-white-primary text-gray-primary dark:bg-black-secondary dark:text-white-primary"
                 >
                   <article className="flex flex-col gap-[8px]">
-                    <h4 className="text-center">
+                    <h4 className="text-center font-medium">
                       {t(`certificates.${item}.title`)}
                     </h4>
                     <div className="flex items-center justify-between">
@@ -53,7 +52,7 @@ const SectionSkills: React.FC = () => {
 
               {/* Placeholder for desktop */}
               {certificates.length === 1 && (
-                <li className="hidden xl:flex justify-center items-center certificate-card p-[8px]  rounded-md shadow dark:shadow-zinc-100 bg-neutral-500 dark:bg-neutral-800 text-white-primary">
+                <li className="hidden xl:flex justify-center items-center certificate-card p-[8px]  rounded-md shadow dark:shadow-white-shadow bg-white-primary dark:bg-black-secondary text-gray-primary dark:text-white-primary">
                   <PiStudentLight size={120} />
                 </li>
               )}

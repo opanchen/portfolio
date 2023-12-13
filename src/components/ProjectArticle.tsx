@@ -89,7 +89,7 @@ const ProjectArticle: React.FC<Props> = ({ project }: Props) => {
         </button>
       </div>
 
-      <h4>{title}</h4>
+      <h4 className="font-medium text-[20px]">{title}</h4>
 
       <ul className="flex self-start gap-[8px]">
         <li>
@@ -104,7 +104,14 @@ const ProjectArticle: React.FC<Props> = ({ project }: Props) => {
         {locale === "en" ? description.en : description.uk}
       </p>
 
-      {role && <p className="text-primary">{role}</p>}
+      {role && (
+        <p className="text-primary">
+          <span className="font-medium">
+            {locale === "en" ? "Position: " : "Посада: "}
+          </span>
+          {role}
+        </p>
+      )}
 
       <ul className="flex gap-[8px] justify-center flex-wrap">
         {technologies.map(({ name, image }) => (

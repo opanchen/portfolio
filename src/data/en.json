@@ -48,6 +48,9 @@
       "telegram": "https://t.me/opanchen",
       "email": "mailto:opanchen.dev@gmail.com"
     },
-    "cv": "Download CV"
+    "cv": {
+      "label": "Download CV",
+      "url": "https://drive.google.com/file/d/1VTnn44sWzb4vLxnPxE6SK0csi2vCNJ6m/view?usp=sharing"
+    }
   }
 }

@@ -30,12 +30,14 @@ const Footer: React.FC = () => {
               ))}
             </ul>
 
-            <button
-              className="md:mb-auto w-full pre-sm:w-[240px] md:w-full xl:w-[284px] p-[16px] rounded-md shadow dark:shadow-white-shadow bg-white-primary text-gray-primary dark:bg-black-secondary dark:text-white-primary hover:scale-105 focus:outline-none focus:scale-105 transition_prop"
-              type="button"
+            <Link
+              href={t("cv.url")}
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              className="not-italic text-center md:mb-auto w-full pre-sm:w-[240px] md:w-full xl:w-[284px] p-[16px] rounded-md shadow dark:shadow-white-shadow bg-white-primary text-gray-primary dark:bg-black-secondary dark:text-white-primary hover:scale-105 focus:outline-none focus:scale-105 transition_prop"
             >
-              {t("cv")}
-            </button>
+              {t("cv.label")}
+            </Link>
 
             <Link
               href={t("links.email")}

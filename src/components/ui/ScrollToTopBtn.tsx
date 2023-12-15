@@ -4,7 +4,11 @@ import { useEffect, useState } from "react";
 
 import { FaArrowUp } from "react-icons/fa6";
 
-const ScrollToTopBtn: React.FC = () => {
+type Props = {
+  label: string;
+};
+
+const ScrollToTopBtn: React.FC<Props> = ({ label }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -34,6 +38,7 @@ const ScrollToTopBtn: React.FC = () => {
     <button
       type="button"
       onClick={scrollToTop}
+      aria-label={label}
       className={`fixed z-10 bottom-4 right-4 md:bottom-5 md:right-5 xl:bottom-8 xl:right-8 rounded-full p-2 outline-none border-[1px]  gradient-primary-alpha text-white-primary shadow-sm dark:shadow-white-shadow transition_prop hover:scale-110 hover:shadow focus:scale-110 focus:shadow focus:outline-none ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}

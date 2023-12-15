@@ -52,5 +52,8 @@
       "label": "Завантажити резюме",
       "url": "https://drive.google.com/file/d/1VTnn44sWzb4vLxnPxE6SK0csi2vCNJ6m/view?usp=sharing"
     }
+  },
+  "Common": {
+    "scroll-up-btn": "Повернутися догори"
   }
 }

@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
     <footer id="contacts" className="py-[16px]">
       <Container>
         <p className="text-[20px] font-bold md:text-[32px] uppercase text-gray-primary dark:text-white-primary text-center sm:text-left">
-          Contact me
+          {t("title")}
         </p>
         <div className="mb-[16px] xl:mb-[32px] flex flex-col gap-[16px] md:flex-row md:gap-[32px] md:justify-end xl:justify-between">
           <ContactForm />

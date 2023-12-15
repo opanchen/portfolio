@@ -18,3 +18,4 @@ export { default as FormErrorMessage } from "./ui/FormErrorMessage";
 export { default as TryzubIcon } from "./ui/TryzubIcon";
 export { default as MobileMenu } from "./MobileMenu";
 export { default as BurgerBtn } from "./ui/BurgerBtn";
+export { default as ScrollToTopBtn } from "./ui/ScrollToTopBtn";

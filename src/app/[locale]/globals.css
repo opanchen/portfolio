@@ -14,7 +14,11 @@
   @apply bg-gradient-to-br from-blue-500 via-pink-700 to-rose-300;
 }
 
-.text-primary {
+.gradient-primary-alpha {
+  @apply bg-gradient-to-br from-blue-500/80 via-pink-700/80 to-rose-300/80;
+}
+
+.gradient .text-primary {
   @apply font-extralight text-[14px] xl:text-[16px];
 }
 

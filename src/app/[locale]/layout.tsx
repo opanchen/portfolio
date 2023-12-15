@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import { AppBar, Footer } from "@components/layout";
 import UIThemeProvider from "./providers";
 import { useTranslations } from "next-intl";
+import { ScrollToTopBtn } from "@components";
 
 const locales = ["en", "uk"];
 
@@ -96,7 +97,11 @@ const RootLayout: React.FC<Props> = ({
       >
         <UIThemeProvider>
           <AppBar navContent={navContent} />
+
           <main>{children}</main>
+
+          <ScrollToTopBtn />
+
           <Footer />
 
           <div id="modal" />

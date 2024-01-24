@@ -1,5 +1,49 @@
 [
   {
+    "title": "Confetti",
+    "tags": ["all", "collaborations"],
+    "role": {
+      "en": "Team lead, front-end developer answerable for general project template & configuration, implementation of routing system and metadata structure, creating inner components (including navigation menu, interactive image gallery, etc), email-service, code review and bug fixing.",
+      "uk": "Тімлід, Front-end розробник, відповідальний за збірку проекту та загальні налаштування, реалізацію системи роутингу і структури метаданих, створення внутрішніх компонентів (включаючи навігаційне меню, інтерактивну галерею зображень тощо), поштовий сервіс, перевірку коду та баг-фіксинг."
+    },
+    "startDate": "2024",
+    "description": {
+      "en": "The e-commerce website on Polish for the \"Confetti\" company that was connected to Sanity headless CMS and built on the basis of Next.js (App Router) architecture using Nodemailer API, inner interactive elements and general implementation of minimalistic & responsive design as well.",
+      "uk": "Комерційний веб-сайт польською мовою для компанії \"Confetti\", підключений до адміністративної панелі Sanity headless CMS і побудований на основі архітектури Next.js (App Router) з використанням Nodemailer API, внутрішніх інтерактивних елементів та загальною реалізацією мінімалістичного респонсивного дизайну"
+    },
+    "images": ["images/placeholder.jpg"],
+    "urlDemo": "https://confetti-kappa.vercel.app/",
+    "urlGH": "https://github.com/SoftRyzen-internship/confetti",
+    "tech": "TypeScript • Next.js • React.js • Tailwind CSS • CSS • Sanity",
+    "technologies": [
+      {
+        "name": "TypeScript",
+        "image": "devicon-typescript-plain"
+      },
+      {
+        "name": "Next.js",
+        "image": "devicon-nextjs-original"
+      },
+      {
+        "name": "React.js",
+        "image": "devicon-react-original"
+      },
+      {
+        "name": "Tailwind CSS",
+        "image": "devicon-tailwindcss-plain"
+      },
+      {
+        "name": "CSS",
+        "image": "devicon-css3-plain"
+      },
+      {
+        "name": "Sanity",
+        "image": "images/sanity.png"
+      }
+    ]
+  },
+
+  {
     "title": "13 Candle Bar",
     "tags": ["all", "collaborations"],
     "role": {

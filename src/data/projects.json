@@ -8,10 +8,19 @@
     },
     "startDate": "2024",
     "description": {
-      "en": "The e-commerce website on Polish for the \"Confetti\" company that was connected to Sanity headless CMS and built on the basis of Next.js (App Router) architecture using Nodemailer API, inner interactive elements and general implementation of minimalistic & responsive design as well.",
-      "uk": "Комерційний веб-сайт польською мовою для компанії \"Confetti\", підключений до адміністративної панелі Sanity headless CMS і побудований на основі архітектури Next.js (App Router) з використанням Nodemailer API, внутрішніх інтерактивних елементів та загальною реалізацією мінімалістичного респонсивного дизайну"
+      "en": "The e-commerce website on Polish for the \"Confetti\" company with embedded headless CMS (Sanity) that built on the basis of Next.js (App Router) architecture using Nodemailer API, inner interactive elements and general implementation of minimalistic & responsive design as well.",
+      "uk": "Комерційний веб-сайт польською мовою для компанії \"Confetti\" зі вбудованою безголовою CMS (Sanity), побудований на основі архітектури Next.js (App Router) з використанням Nodemailer API, внутрішніх інтерактивних елементів та загальною реалізацією мінімалістичного респонсивного дизайну"
     },
-    "images": ["images/placeholder.jpg"],
+
+    "images": [
+      "images/projects/confetti/confetti-01.jpg",
+      "images/projects/confetti/confetti-02.jpg",
+      "images/projects/confetti/confetti-03.jpg",
+      "images/projects/confetti/confetti-04.jpg",
+      "images/projects/confetti/confetti-05.jpg",
+      "images/projects/confetti/confetti-06.jpg",
+      "images/projects/confetti/confetti-07.jpg"
+    ],
     "urlDemo": "https://confetti-kappa.vercel.app/",
     "urlGH": "https://github.com/SoftRyzen-internship/confetti",
     "tech": "TypeScript • Next.js • React.js • Tailwind CSS • CSS • Sanity",

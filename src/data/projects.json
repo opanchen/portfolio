@@ -1,5 +1,54 @@
 [
   {
+    "title": "De Tort",
+    "tags": ["all", "collaborations"],
+    "role": {
+      "en": "Front-end developer answerable for data modeling and requests to CMS, implementation of routing system and metadata structure, creating inner components (including navigation menu, reusable sections, etc), code review and bug fixing.",
+      "uk": "Front-end розробник, відповідальний за моделювання даних та запити до CMS, реалізацію системи роутингу і структури метаданих, створення внутрішніх компонентів (включаючи навігаційне меню, секції, що перевикористовуються, тощо), перевірку коду та баг-фіксинг."
+    },
+    "startDate": "2024",
+    "description": {
+      "en": "The e-commerce website for \"de_tort\" pastry shop that was connected to personal administrative panel (Strapi CMS) and built on the basis of Next.js (App Router) architecture with inner interactive elements and responsive design as well.",
+      "uk": "Комерційний веб-сайт для кондитерської \"de_tort\", підключений до власної адміністративної панелі (Strapi CMS) і побудований на основі архітектури Next.js (App Router) з внутрішніми інтерактивними елементами та респонсивним дизайном"
+    },
+
+    "images": ["images/placeholder.jpg"],
+    "urlDemo": "https://de-tort.vercel.app/",
+    "urlGH": "https://github.com/SoftRyzen-internship/de-tort",
+    "tech": "TypeScript • Next.js • React.js • Tailwind CSS • CSS • GraphQL • Strapi",
+    "technologies": [
+      {
+        "name": "TypeScript",
+        "image": "devicon-typescript-plain"
+      },
+      {
+        "name": "Next.js",
+        "image": "devicon-nextjs-original"
+      },
+      {
+        "name": "React.js",
+        "image": "devicon-react-original"
+      },
+      {
+        "name": "Tailwind CSS",
+        "image": "devicon-tailwindcss-plain"
+      },
+      {
+        "name": "CSS",
+        "image": "devicon-css3-plain"
+      },
+      {
+        "name": "GraphQL",
+        "image": "devicon-graphql-plain"
+      },
+      {
+        "name": "Strapi",
+        "image": "images/strapi.png"
+      }
+    ]
+  },
+
+  {
     "title": "Confetti",
     "tags": ["all", "collaborations"],
     "role": {

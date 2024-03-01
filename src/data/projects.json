@@ -1,6 +1,6 @@
 [
   {
-    "title": "De Tort",
+    "title": "De_Tort",
     "tags": ["all", "collaborations"],
     "role": {
       "en": "Front-end developer answerable for data modeling and requests to CMS, implementation of routing system and metadata structure, creating inner components (including navigation menu, reusable sections, etc), code review and bug fixing.",
@@ -12,8 +12,16 @@
       "uk": "Комерційний веб-сайт для кондитерської \"de_tort\", підключений до власної адміністративної панелі (Strapi CMS) і побудований на основі архітектури Next.js (App Router) з внутрішніми інтерактивними елементами та респонсивним дизайном"
     },
 
-    "images": ["images/placeholder.jpg"],
-    "urlDemo": "https://de-tort.vercel.app/",
+    "images": [
+      "images/projects/de-tort/de-tort-01.jpg",
+      "images/projects/de-tort/de-tort-02.jpg",
+      "images/projects/de-tort/de-tort-03.jpg",
+      "images/projects/de-tort/de-tort-04.jpg",
+      "images/projects/de-tort/de-tort-05.jpg",
+      "images/projects/de-tort/de-tort-06.jpg",
+      "images/projects/de-tort/de-tort-07.jpg"
+    ],
+    "urlDemo": "https://de-tort.com.ua/",
     "urlGH": "https://github.com/SoftRyzen-internship/de-tort",
     "tech": "TypeScript • Next.js • React.js • Tailwind CSS • CSS • GraphQL • Strapi",
     "technologies": [

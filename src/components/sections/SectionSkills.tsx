@@ -16,7 +16,7 @@ const SectionSkills: React.FC = () => {
           {t("title")}
         </h2>
 
-        <div className="flex flex-col gap-[16px] md:flex-row md:items-start md:gap-[32px]">
+        <div className="flex flex-col gap-[16px] md:flex-row md:items-stretch md:gap-[32px]">
           <h3 className="sr-only">{t("stack.title")}</h3>
 
           <StackList />

@@ -36,6 +36,12 @@
         "from": "GoIT",
         "urlDownload": "https://drive.google.com/file/d/1-2KL8Ryfa4jrE32QAA50qfDZWsnX-0kA/view?usp=sharing",
         "desc": "Certificate of successful completion of the \"FullStack Online\" course at the GoIT school, during which basic knowledge of HTML + CSS, JavaScript, React.js and Node.js was acquired, lectures on Soft Skills and Career Skills were listened to, and 3 full team projects were implemented within the curriculum."
+      },
+      "softryzenFr": {
+        "title": "FRONTEND DEVELOPER",
+        "from": "SoftRyzen",
+        "urlDownload": "https://drive.google.com/file/d/1wDToG-Mv1EmXt7S6ZesOa9I9dcwsRmq-/view?usp=drive_link",
+        "desc": "Certificate of successful completion of the internship as Front-End Developer at SoftRyzen IT-company, during which experience of the development and presentation commercial projects was gained, management skills of work processes in a leadership position and general tech skills were improved."
       }
     }
   },

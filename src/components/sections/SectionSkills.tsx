@@ -7,7 +7,7 @@ import { Container, IconLink, StackList } from "@components";
 const SectionSkills: React.FC = () => {
   const t = useTranslations("Skills");
 
-  const certificates = ["goitFS"];
+  const certificates = ["goitFS", "softryzenFr"];
 
   return (
     <section id="skills" className="py-[16px]">

@@ -3,10 +3,12 @@ import { notFound } from "next/navigation";
 import { useTranslations } from "next-intl";
 
 import UIThemeProvider from "./providers";
-import { AppBar, Footer } from "@components/layout";
-import { ScrollToTopBtn } from "@components";
 
 import { Inter } from "next/font/google";
+
+import { AppBar } from "@layout/AppBar";
+import { Footer } from "@layout/Footer";
+import { ScrollToTopBtn } from "@components/ui/ScrollToTopBtn/ScrollToTopBtn";
 
 import "./globals.css";
 

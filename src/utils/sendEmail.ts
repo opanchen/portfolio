@@ -1,5 +1,5 @@
 import { toast } from "react-toastify";
-import type { FormData } from "@components/ContactForm";
+import type { FormData } from "@components/ContactForm/ContactForm";
 
 export const sendEmail = (data: FormData, lang = "en") => {
   // console.log("SUBMIT: ", JSON.stringify(data));

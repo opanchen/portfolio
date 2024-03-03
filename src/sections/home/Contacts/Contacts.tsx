@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 
 import { ContactForm } from "@components/ContactForm";
 import { IconLink } from "@components/ui/IconLink";
-import Container from "@components/Container";
+import { Container } from "@components/ui/Container";
 
 export const Contacts: React.FC = () => {
   const t = useTranslations("Contacts");

@@ -2,9 +2,9 @@ import { useTranslations } from "next-intl";
 
 import { PiStudentLight } from "react-icons/pi";
 
-import Container from "@components/Container";
 import { StackList } from "@components/StackList";
 import { IconLink } from "@components/ui/IconLink";
+import { Container } from "@components/ui/Container";
 
 export const Skills: React.FC = () => {
   const t = useTranslations("Skills");

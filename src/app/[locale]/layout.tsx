@@ -130,13 +130,9 @@ const RootLayout: React.FC<Props> = ({
       >
         <UIThemeProvider>
           <AppBar navContent={navContent} />
-
           <main>{children}</main>
-
           <ScrollToTopBtn label={tSecondary("scroll-up-btn")} />
-
           <Footer />
-
           <div id="modal" />
         </UIThemeProvider>
       </body>

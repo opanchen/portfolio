@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
-import Container from "@components/Container";
 import { ProjectList } from "@components/ProjectList/ProjectList";
+import { Container } from "@components/ui/Container";
 
 import projects from "../../../data/projects.json";
 

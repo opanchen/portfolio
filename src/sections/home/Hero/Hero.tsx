@@ -2,10 +2,10 @@ import Link from "next/link";
 
 import { useTranslations } from "next-intl";
 
-import { HeroImage } from "@components/ui/HeroImage";
-import { HeroAnimationWrapper } from "@components/ui/HeroAnimationWrapper";
-import { AnimatedTypeLine } from "@components/ui/AnimatedTypeLine";
-import { Container } from "@components/ui/Container";
+import { HeroImage } from "@/components/ui/HeroImage";
+import { HeroAnimationWrapper } from "@/components/ui/HeroAnimationWrapper";
+import { AnimatedTypeLine } from "@/components/ui/AnimatedTypeLine";
+import { Container } from "@/components/ui/Container";
 
 export const Hero: React.FC = () => {
   const t = useTranslations("Hero");

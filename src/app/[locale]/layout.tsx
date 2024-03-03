@@ -6,9 +6,9 @@ import UIThemeProvider from "./providers";
 
 import { Inter } from "next/font/google";
 
-import { AppBar } from "@layout/AppBar";
-import { Footer } from "@layout/Footer";
-import { ScrollToTopBtn } from "@components/ui/ScrollToTopBtn/ScrollToTopBtn";
+import { AppBar } from "@/layout/AppBar";
+import { Footer } from "@/layout/Footer";
+import { ScrollToTopBtn } from "@/components/ui/ScrollToTopBtn/ScrollToTopBtn";
 
 import "./globals.css";
 

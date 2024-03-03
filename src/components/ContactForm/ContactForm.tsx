@@ -8,9 +8,9 @@ import useFormPersist from "react-hook-form-persist";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import { FormErrorMessage } from "@components/ui/FormErrorMessage";
+import { FormErrorMessage } from "@/components/ui/FormErrorMessage";
 
-import { sendEmail } from "@utils";
+import { sendEmail } from "@/utils";
 
 import { FormData } from "./types";
 

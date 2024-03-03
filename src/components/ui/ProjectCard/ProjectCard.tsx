@@ -7,10 +7,10 @@ import { useLocale } from "next-intl";
 import { AnimatePresence } from "framer-motion";
 import { FaRegEye } from "react-icons/fa";
 
-import { Modal } from "@components/Modal";
-import { ProjectArticle } from "@components/ProjectArticle";
+import { Modal } from "@/components/Modal";
+import { ProjectArticle } from "@/components/ProjectArticle";
 
-import type { Project } from "@types";
+import type { Project } from "@/types";
 
 type Props = {
   project: Project;

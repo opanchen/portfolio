@@ -4,9 +4,9 @@ import { useEffect } from "react";
 
 import { motion } from "framer-motion";
 
-import { MainNav } from "@components/MainNav";
-import { LangToggle } from "@components/ui/LangToggle";
-import { ThemeToggle } from "@components/ui/ThemeToggle";
+import { MainNav } from "@/components/MainNav";
+import { LangToggle } from "@/components/ui/LangToggle";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 import { MobileMenuProps } from "./types";
 

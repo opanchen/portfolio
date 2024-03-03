@@ -4,8 +4,8 @@ import { useState, useRef, useMemo } from "react";
 
 import { motion, useInView } from "framer-motion";
 
-import { ProjectCard } from "@components/ui/ProjectCard";
-import { ProjectsTab } from "@components/ui/ProjectsTab";
+import { ProjectCard } from "@/components/ui/ProjectCard";
+import { ProjectsTab } from "@/components/ui/ProjectsTab";
 
 import { ProjectListProps } from "./types";
 

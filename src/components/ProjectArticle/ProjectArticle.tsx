@@ -12,8 +12,8 @@ import "swiper/css/navigation";
 
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
-import { IconLink } from "@components/ui/IconLink";
-import { TechLogo } from "@components/ui/TechLogo";
+import { IconLink } from "@/components/ui/IconLink";
+import { TechLogo } from "@/components/ui/TechLogo";
 
 import { ProjectArticleProps } from "./types";
 

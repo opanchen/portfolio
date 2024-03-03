@@ -1,9 +1,9 @@
 import { useTranslations } from "next-intl";
 
-import { ProjectList } from "@components/ProjectList/ProjectList";
-import { Container } from "@components/ui/Container";
+import { ProjectList } from "@/components/ProjectList/ProjectList";
+import { Container } from "@/components/ui/Container";
 
-import projects from "../../../data/projects.json";
+import projects from "@/data/projects.json";
 
 export const Projects: React.FC = () => {
   const t = useTranslations("Projects");

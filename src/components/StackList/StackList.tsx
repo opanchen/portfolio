@@ -4,9 +4,9 @@ import { useRef } from "react";
 
 import { motion, useInView } from "framer-motion";
 
-import { TechLogo } from "../ui/TechLogo";
+import { TechLogo } from "@/components/ui/TechLogo";
 
-import techStack from "../../data/tech-stack.json";
+import techStack from "@/data/tech-stack.json";
 
 export const StackList: React.FC = () => {
   const ref = useRef(null);

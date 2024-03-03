@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 
-import { Container } from "@components/ui/Container";
-import { LangToggle } from "@components/ui/LangToggle";
-import { ThemeToggle } from "@components/ui/ThemeToggle";
-import { MainNav } from "@components/MainNav";
-import { BurgerBtn } from "@components/ui/BurgerBtn";
-import { MobileMenu } from "@components/MobileMenu";
+import { Container } from "@/components/ui/Container";
+import { LangToggle } from "@/components/ui/LangToggle";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import { MainNav } from "@/components/MainNav";
+import { BurgerBtn } from "@/components/ui/BurgerBtn";
+import { MobileMenu } from "@/components/MobileMenu";
 
 import { AppBarProps } from "./types";
 

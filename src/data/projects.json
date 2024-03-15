@@ -369,8 +369,8 @@
     "title": "News App",
     "tags": ["all", "collaborations"],
     "role": {
-      "en": "Scrum Master, developer of header section, burger-menu, theme switcher and custom calendar widget. Overall composing of the initial project structure, general Lighthouse audit, code review.",
-      "uk": "Скрам майстер, розробник хедеру, бургер-меню, перемикача теми інтерфейсу та кастомного віджету календаря. Загальне налаштування початкової структури проекту, підсумковий аудит показників Lighthouse, перевірка коду."
+      "en": "Scrum Master, developer of header section, burger-menu, theme switcher and custom calendar widget. Overall composing of the initial project structure, general Lighthouse audit, code review, creating and management of Trello dashboard, daily meetings providing.",
+      "uk": "Скрам майстер, розробник хедеру, бургер-меню, перемикача теми інтерфейсу та кастомного віджету календаря. Загальне налаштування початкової структури проекту, підсумковий аудит показників Lighthouse, перевірка коду, створення та управління дошкою Trello, проведення щоденних командних мітингів."
     },
     "startDate": "2023",
     "description": {

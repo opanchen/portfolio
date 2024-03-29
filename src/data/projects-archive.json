@@ -407,6 +407,51 @@
   },
 
   {
+    "title": "MIMIHO",
+    "tags": ["all", "collaborations"],
+    "role": {
+      "en": "Markup developer, answerable for header, hero-section with background image slider, modal windows, forms, code review and bug fixing.",
+      "uk": "Markup розробник, відповідальний за хедер, секцію Hero зі слайдером фонових зображень, модальні вікна, форми, перевірку коду та баг-фіксинг."
+    },
+    "startDate": "2022",
+    "description": {
+      "en": "A website for the hotel and restaurant complex with responsive markup and graphic, image sliders, modal windows and attractive design.",
+      "uk": "Веб-сайт для готельно-ресторанного комплексу з респонсивними версткою та графікою, слайдерами зображень, модальними вікнами і привабливим дизайном."
+    },
+    "images": [
+      "images/projects/mimiho/mimiho-01.jpg",
+      "images/projects/mimiho/mimiho-02.jpg",
+      "images/projects/mimiho/mimiho-03.jpg",
+      "images/projects/mimiho/mimiho-04.jpg",
+      "images/projects/mimiho/mimiho-05.jpg",
+      "images/projects/mimiho/mimiho-06.jpg",
+      "images/projects/mimiho/mimiho-07.jpg",
+      "images/projects/mimiho/mimiho-08.jpg"
+    ],
+    "urlDemo": "https://oleksiifedorenko.github.io/goit-team-project-01/",
+    "urlGH": "https://github.com/OleksiiFedorenko/goit-team-project-01",
+    "tech": "HTML • SASS • JavaScript • Parcel",
+    "technologies": [
+      {
+        "name": "HTML",
+        "image": "devicon-html5-plain"
+      },
+      {
+        "name": "SASS",
+        "image": "devicon-sass-original"
+      },
+      {
+        "name": "JavaScript",
+        "image": "devicon-javascript-plain"
+      },
+      {
+        "name": "Parcel",
+        "image": "images/parcel.png"
+      }
+    ]
+  },
+
+  {
     "title": "WebStudio",
     "tags": ["all", "individual"],
     "startDate": "2022",

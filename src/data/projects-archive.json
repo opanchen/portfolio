@@ -1,5 +1,54 @@
 [
   {
+    "title": "Discord Clone",
+    "tags": ["all", "individual"],
+    "startDate": "2024",
+    "description": {
+      "en": "Tutorial project. A real-time team chat application built on the base of Next.js, ShadcnUI components and Tailwind CSS using MySQL database and websockets. User authentication with Clerk, sending attachments as messages using UploadThing. CRUD-operations according to personal servers, text/video/audio channels and messages.",
+      "uk": "Навчальний проект. Застосунок для групових чатів в режимі реального часу, побудований на базі Next.js, компонентів ShadcnUI та Tailwind CSS, з використанням бази даних MySQL та вебсокетів. Аутентифікація користувача з Clerk, відправлення вкладених файлів за допомогою UploadThing. CRUD-операції з персональними серверами, текстовими/відео/аудіо каналами та повідомленнями."
+    },
+
+    "images": ["images/placeholder.jpg"],
+    "urlDemo": "https://nextjs-discord-clone-production-f7d1.up.railway.app/",
+    "urlGH": "https://github.com/opanchen/nextjs-discord-clone",
+    "tech": "TypeScript • Next.js • React.js • Tailwind CSS • Node.js • MySQL • Prisma • Socket.io",
+    "technologies": [
+      {
+        "name": "TypeScript",
+        "image": "devicon-typescript-plain"
+      },
+      {
+        "name": "Next.js",
+        "image": "devicon-nextjs-original"
+      },
+      {
+        "name": "React.js",
+        "image": "devicon-react-original"
+      },
+      {
+        "name": "Tailwind CSS",
+        "image": "devicon-tailwindcss-plain"
+      },
+      {
+        "name": "Node.js",
+        "image": "devicon-nodejs-plain"
+      },
+      {
+        "name": "MySQL",
+        "image": "devicon-mysql-plain-wordmark"
+      },
+      {
+        "name": "Prisma",
+        "image": "images/prisma-logo.png"
+      },
+      {
+        "name": "Socket.io",
+        "image": "devicon-socketio-original"
+      }
+    ]
+  },
+
+  {
     "title": "De_Tort",
     "tags": ["all", "collaborations"],
     "role": {

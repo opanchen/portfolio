@@ -31,7 +31,7 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
     <article className="w-full flex flex-col items-center gap-[16px] p-[16px]">
       <div className="relative w-full flex justify-center px-[16px] md:px-[24px]">
         <Swiper
-          className="slider lg:max-w-[400px] 2xl:max-w-full"
+          className="slider max-w-full lg:max-w-[400px] 2xl:max-w-full"
           ref={sliderRef}
           onInit={(core: SwiperCore) => {
             sliderRef.current = core.el;
@@ -41,6 +41,7 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
           spaceBetween={24}
           slidesPerView={1}
           centeredSlides
+          lazyPreloadPrevNext={1}
           navigation={{
             prevEl: ".prev",
             nextEl: ".next",
@@ -55,7 +56,7 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
                   alt={title}
                   width={600}
                   height={450}
-                  className="block h-full w-full object-cover"
+                  className="inline-block h-full w-full object-cover"
                 />
               </div>
             </SwiperSlide>

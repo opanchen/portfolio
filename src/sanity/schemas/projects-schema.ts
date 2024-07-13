@@ -39,6 +39,17 @@ const projects = {
               type: "string",
             }),
             defineField({
+              name: "ghUrl",
+              title: "GitHub URL",
+              type: "string",
+            }),
+            defineField({
+              name: "liveURL",
+              title: "Live URL",
+              type: "string",
+            }),
+
+            defineField({
               name: "desc_en",
               title: "Description EN",
               type: "text",

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "HTML",
+    "image": "devicon-html5-plain"
+  },
+  {
+    "name": "CSS",
+    "image": "devicon-css3-plain"
+  },
+  {
+    "name": "SASS",
+    "image": "devicon-sass-original"
+  },
+  {
+    "name": "JavaScript",
+    "image": "devicon-javascript-plain"
+  },
+  {
+    "name": "React.js",
+    "image": "devicon-react-original"
+  },
+  {
+    "name": "Redux.js",
+    "image": "devicon-redux-original"
+  },
+  {
+    "name": "Node.js",
+    "image": "devicon-nodejs-plain"
+  },
+  {
+    "name": "Express.js",
+    "image": "devicon-express-original"
+  },
+  {
+    "name": "MongoDB",
+    "image": "devicon-mongodb-plain"
+  },
+  {
+    "name": "TypeScript",
+    "image": "devicon-typescript-plain"
+  },
+  {
+    "name": "Next.js",
+    "image": "devicon-nextjs-original"
+  },
+  {
+    "name": "Tailwind CSS",
+    "image": "devicon-tailwindcss-plain"
+  }
+]

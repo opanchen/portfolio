@@ -4,15 +4,6 @@ export const contacts = {
   type: 'document',
   fields: [
     {
-      name: 'email',
-      title: 'Email',
-      type: 'string',
-      validation: (Rule: any) => [
-        Rule.required().error('This field is required'),
-        Rule.email().error('This field should be an email'),
-      ],
-    },
-    {
       name: 'gitHub',
       title: 'GitHub',
       type: 'string',
@@ -34,6 +25,15 @@ export const contacts = {
       type: 'string',
       validation: (Rule: any) => [
         Rule.required().error('This field is required'),
+      ],
+    },
+    {
+      name: 'email',
+      title: 'Email',
+      type: 'string',
+      validation: (Rule: any) => [
+        Rule.required().error('This field is required'),
+        Rule.email().error('This field should be an email'),
       ],
     },
     {

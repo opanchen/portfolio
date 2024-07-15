@@ -1,7 +1,9 @@
+import { client } from '@/sanity/client';
 import { contactsQuery } from '@/sanity/requests/queries/contactsQuery';
-import { client } from '../client';
+
+import { ContactsResponse } from '@/types/cms-landing.types';
 
 export const fetchContacts = async () => {
-  const res = await client.fetch(contactsQuery);
+  const res: ContactsResponse = await client.fetch(contactsQuery);
   return res;
 };

@@ -1,7 +1,9 @@
+import { client } from '@/sanity/client';
 import { heroQuery } from '@/sanity/requests/queries/heroQuery';
-import { client } from '../client';
+
+import { HeroResponse } from '@/types/cms-landing.types';
 
 export const fetchHero = async () => {
-  const res = await client.fetch(heroQuery);
+  const res: HeroResponse = await client.fetch(heroQuery);
   return res;
 };

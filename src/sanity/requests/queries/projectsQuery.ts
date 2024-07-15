@@ -10,8 +10,12 @@ export const projectsQuery = groq`
        liveUrl,
        desc_en,
        desc_uk,
-       images[] 
-     {
+       techList[] {
+        name,
+        src,
+        isShown
+        },
+       images[] {
         alt,
         "path": asset -> url,
         _key

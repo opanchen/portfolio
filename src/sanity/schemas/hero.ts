@@ -30,6 +30,11 @@ export const hero = {
           name: 'about',
           type: 'text',
         }),
+        defineField({
+          title: 'Hero Button Label',
+          name: 'heroBtnLabel',
+          type: 'string',
+        }),
       ],
     }),
 
@@ -50,6 +55,11 @@ export const hero = {
           title: 'About',
           name: 'about',
           type: 'text',
+        }),
+        defineField({
+          title: 'Hero Button Label',
+          name: 'heroBtnLabel',
+          type: 'string',
         }),
       ],
     }),

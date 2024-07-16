@@ -11,5 +11,6 @@ export const fetchContacts = async () => {
       next: { revalidate: 3600 },
     },
   );
+
   return res;
 };

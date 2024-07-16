@@ -118,7 +118,7 @@ export const IconLink: React.FC<IconLinkProps> = ({
 
   return (
     <Link
-      href={href}
+      href={type === 'email' ? `mailto:${href}` : href}
       target="_blank"
       rel="nofollow noopener noreferrer"
       className={classNames}

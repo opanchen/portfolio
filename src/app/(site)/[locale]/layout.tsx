@@ -6,9 +6,13 @@ import UIThemeProvider from './providers';
 
 import { Inter } from 'next/font/google';
 
+import { fetchMetadata } from '@/sanity/requests/fetchMetadata';
+
 import { AppBar } from '@/layout/AppBar';
 import { Footer } from '@/layout/Footer';
 import { ScrollToTopBtn } from '@/components/ui/ScrollToTopBtn/ScrollToTopBtn';
+
+import metaStatic from '@/data/meta.json';
 
 import '../../globals.css';
 
@@ -16,72 +20,31 @@ const locales = ['en', 'uk'];
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
-  title: 'Portfolio',
+export async function generateMetadata(): Promise<Metadata> {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL as string;
+  const { title, manifest, description, keywords, openGraph, icons } =
+    metaStatic;
 
-  description: 'Cook borsch, write code and never stop exploring.',
+  const data = await fetchMetadata();
 
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL as string),
-
-  alternates: {
-    canonical: process.env.NEXT_PUBLIC_BASE_URL as string,
-  },
-
-  manifest: '/meta/site.webmanifest',
-
-  keywords:
-    'IT, Web developer, Front-end, Full-stack, Programming, JavaScript, MERN, UI, website, Ukraine',
-
-  openGraph: {
-    title: 'Portfolio',
-    description: 'Cook borsch, write code and never stop exploring.',
-    siteName: 'Portfolio',
-    locale: 'en-US',
-    images: [
-      {
-        url: '/meta/ogp-image.jpg',
-        width: 2560,
-        height: 1080,
-        alt: 'Oleh Panchenko. Web developer.',
-      },
-    ],
-    url: process.env.NEXT_PUBLIC_BASE_URL as string,
-  },
-
-  icons: {
-    icon: [
-      {
-        url: '/meta/favicon.ico',
-      },
-      {
-        url: '/meta/favicon-16x16.png',
-        sizes: '16x16',
-        type: 'image/png',
-      },
-      {
-        url: '/meta/favicon-32x32.png',
-        sizes: '32x32',
-        type: 'image/png',
-      },
-      {
-        url: '/meta/android-chrome-192x192.png',
-        sizes: '192x192',
-        type: 'image/png',
-      },
-      {
-        url: '/meta/android-chrome-512x512.png',
-        sizes: '512x512',
-        type: 'image/png',
-      },
-    ],
-    shortcut: '/meta/favicon.ico',
-    apple: '/meta/apple-touch-icon.png',
-    other: {
-      rel: '/meta/apple-touch-icon.png',
-      url: '/meta/apple-touch-icon.png',
+  return {
+    title: data.title || title,
+    description: data.description || description,
+    keywords: data.keywords || keywords,
+    metadataBase: new URL(baseUrl),
+    alternates: {
+      canonical: baseUrl,
     },
-  },
-};
+    manifest,
+    openGraph: {
+      ...openGraph,
+      title: data.title || title,
+      description: data.description || description,
+      url: baseUrl,
+    },
+    icons,
+  };
+}
 
 type Props = {
   children: React.ReactNode;

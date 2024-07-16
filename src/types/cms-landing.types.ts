@@ -70,3 +70,9 @@ export type TechStackResponse = {
 export type ProjectsResponse = {
   projectList: Project[];
 };
+
+export type MetadataResponse = {
+  title: string;
+  description: string;
+  keywords: string;
+};

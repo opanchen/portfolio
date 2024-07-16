@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import Image from "next/image";
+import Image from 'next/image';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 export const HeroImage: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ export const HeroImage: React.FC = () => {
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
-      className="shrink-[0] relative w-[240px] h-[240px] xl:w-[400px] xl:h-[400px] rounded-full overflow-hidden gradient-primary shadow dark:shadow-white-shadow sm:self-start"
+      className="gradient-primary relative h-[240px] w-[240px] shrink-[0] overflow-hidden rounded-full shadow dark:shadow-white-shadow sm:self-start xl:h-[400px] xl:w-[400px]"
     >
       <Image
         src="/assets/images/hero.png"

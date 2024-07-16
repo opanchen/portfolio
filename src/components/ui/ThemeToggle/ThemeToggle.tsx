@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
-import { useTheme } from "next-themes";
-import { useLocale } from "next-intl";
+import { useTheme } from 'next-themes';
+import { useLocale } from 'next-intl';
 
-import { FaMoon } from "react-icons/fa";
-import { BsSunFill } from "react-icons/bs";
+import { FaMoon } from 'react-icons/fa';
+import { BsSunFill } from 'react-icons/bs';
 
 export const ThemeToggle: React.FC = () => {
   const [mounted, setMounted] = useState(false);
@@ -23,25 +23,25 @@ export const ThemeToggle: React.FC = () => {
   }
 
   const toggleTheme = () => {
-    theme === "light" ? setTheme("dark") : setTheme("light");
+    theme === 'light' ? setTheme('dark') : setTheme('light');
   };
 
-  const label = locale === "en" ? "Toggle theme mode" : "Перемкнути режим теми";
+  const label = locale === 'en' ? 'Toggle theme mode' : 'Перемкнути режим теми';
 
   return (
     <>
       <button
-        className="shadow-sm hover:shadow hover:scale-110 focus:outline-none focus:shadow focus:scale-110 transition_prop dark:shadow-white-shadow relative w-[56px] h-[24px] p-[4px] flex items-center cursor-pointer bg-blue-sky dark:bg-black-primary rounded-full"
+        className="transition_prop relative flex h-[24px] w-[56px] cursor-pointer items-center rounded-full bg-blue-sky p-[4px] shadow-sm hover:scale-110 hover:shadow focus:scale-110 focus:shadow focus:outline-none dark:bg-black-primary dark:shadow-white-shadow"
         onClick={toggleTheme}
         type="button"
         aria-label={label}
       >
-        <FaMoon className={"text-white-primary"} size={16} />
+        <FaMoon className={'text-white-primary'} size={16} />
         <div
-          className="absolute bg-white-primary w-[20px] h-[20px] rounded-full shadow-md transform transition-transform duration-300"
-          style={theme === "dark" ? { left: "2px" } : { right: "2px" }}
+          className="absolute h-[20px] w-[20px] transform rounded-full bg-white-primary shadow-md transition-transform duration-300"
+          style={theme === 'dark' ? { left: '2px' } : { right: '2px' }}
         ></div>
-        <BsSunFill className={"ml-auto text-yellow"} size={16} />
+        <BsSunFill className={'ml-auto text-yellow'} size={16} />
       </button>
     </>
   );

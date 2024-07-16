@@ -1,10 +1,10 @@
 type LinkLiteral =
-  | "demo"
-  | "gh"
-  | "download"
-  | "linkedIn"
-  | "email"
-  | "telegram";
+  | 'demo'
+  | 'gh'
+  | 'download'
+  | 'linkedIn'
+  | 'email'
+  | 'telegram';
 
 export type IconLinkProps = {
   type: LinkLiteral | string;

@@ -1,6 +1,6 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import { MainNavProps } from "./types";
+import { MainNavProps } from './types';
 
 export const MainNav: React.FC<MainNavProps> = ({ navContent, onClick }) => {
   const handleClick = () => {
@@ -14,9 +14,9 @@ export const MainNav: React.FC<MainNavProps> = ({ navContent, onClick }) => {
           <li key={index} onClick={handleClick}>
             <Link
               href={`#${item.key}`}
-              className="inline-block hover:scale-110 focus:scale-110 transition_prop"
+              className="transition_prop inline-block hover:scale-110 focus:scale-110"
             >
-              {item.value}{" "}
+              {item.value}{' '}
             </Link>
           </li>
         ))}

@@ -1,1 +1,1 @@
-export * from "./LangToggle";
+export * from './LangToggle';

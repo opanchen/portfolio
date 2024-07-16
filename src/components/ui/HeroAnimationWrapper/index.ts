@@ -1,1 +1,1 @@
-export * from "./HeroAnimationWrapper";
+export * from './HeroAnimationWrapper';

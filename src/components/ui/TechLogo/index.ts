@@ -1,1 +1,1 @@
-export * from "./TechLogo";
+export * from './TechLogo';

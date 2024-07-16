@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import { HeroAnimationWrapperProps } from "./types";
+import { HeroAnimationWrapperProps } from './types';
 
 export const HeroAnimationWrapper: React.FC<HeroAnimationWrapperProps> = ({
   children,

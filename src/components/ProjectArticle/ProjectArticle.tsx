@@ -1,35 +1,49 @@
-"use client";
+'use client';
 
-import { useRef } from "react";
-import Image from "next/image";
-import { useLocale } from "next-intl";
+import { useRef } from 'react';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-import SwiperCore from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import SwiperCore from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
-import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 
-import { IconLink } from "@/components/ui/IconLink";
-import { TechLogo } from "@/components/ui/TechLogo";
+import { IconLink } from '@/components/ui/IconLink';
+import { TechLogo } from '@/components/ui/TechLogo';
 
-import { ProjectArticleProps } from "./types";
+import { ProjectArticleProps } from './types';
 
 export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
   const locale = useLocale();
 
   const sliderRef = useRef<any>(null);
 
-  const { title, description, role, technologies, images, urlDemo, urlGH } =
-    project;
+  const {
+    name,
+    desc_en,
+    desc_uk,
+    role_en,
+    role_uk,
+    techList,
+    images,
+    liveUrl,
+    ghUrl,
+  } = project;
 
-  const slides = images;
+  const desc = locale === 'en' ? desc_en : desc_uk;
+  const role = locale === 'en' ? role_en : role_uk;
+
+  const slides = images || [];
+
+  const imagePlaceholderPath = '/assets/images/placeholder.jpg';
 
   return (
-    <article className="w-full flex flex-col items-center gap-[16px] p-[16px]">
-      <div className="relative w-full flex justify-center px-[16px] md:px-[24px]">
+    <article className="flex w-full flex-col items-center gap-[16px] p-[16px]">
+      <div className="relative flex w-full justify-center px-[16px] md:px-[24px]">
         <Swiper
           className="slider max-w-full lg:max-w-[400px] 2xl:max-w-full"
           ref={sliderRef}
@@ -43,17 +57,17 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
           centeredSlides
           lazyPreloadPrevNext={1}
           navigation={{
-            prevEl: ".prev",
-            nextEl: ".next",
+            prevEl: '.prev',
+            nextEl: '.next',
           }}
           modules={[Navigation]}
         >
-          {slides.map((path, index) => (
+          {slides.map(({ path, alt }, index) => (
             <SwiperSlide key={index}>
-              <div className="w-full aspect-[4/3] rounded-md overflow-hidden">
+              <div className="aspect-[4/3] w-full overflow-hidden rounded-md">
                 <Image
-                  src={`/assets/${path}`}
-                  alt={title}
+                  src={path || imagePlaceholderPath}
+                  alt={alt}
                   width={600}
                   height={450}
                   className="inline-block h-full w-full object-cover"
@@ -65,9 +79,9 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
 
         <button
           type="button"
-          className="prev absolute top-1/2 left-[-8px] sm:left-[-16px] md:left-[-16px] lg:left-0 2xl:left-[-20px] translate-y-[-50%] hover:scale-125 focus:outline-none focus:scale-125 transition_prop"
+          className="prev transition_prop absolute left-[-8px] top-1/2 translate-y-[-50%] hover:scale-125 focus:scale-125 focus:outline-none sm:left-[-16px] md:left-[-16px] lg:left-0 2xl:left-[-20px]"
           aria-label={
-            locale === "en" ? "Previous picture" : "Попереднє зображення"
+            locale === 'en' ? 'Previous picture' : 'Попереднє зображення'
           }
         >
           <BsChevronCompactLeft
@@ -78,8 +92,8 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
 
         <button
           type="button"
-          className="next absolute top-1/2 right-[-8px] sm:right-[-16px] md:right-[-16px] lg:right-0 2xl:right-[-20px] translate-y-[-50%] hover:scale-125 focus:outline-none focus:scale-125 transition_prop"
-          aria-label={locale === "en" ? "Next picture" : "Наступне зображення"}
+          className="next transition_prop absolute right-[-8px] top-1/2 translate-y-[-50%] hover:scale-125 focus:scale-125 focus:outline-none sm:right-[-16px] md:right-[-16px] lg:right-0 2xl:right-[-20px]"
+          aria-label={locale === 'en' ? 'Next picture' : 'Наступне зображення'}
         >
           <BsChevronCompactRight
             size={48}
@@ -88,35 +102,35 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
         </button>
       </div>
 
-      <h4 className="font-medium text-[20px]">{title}</h4>
+      <h4 className="text-[20px] font-medium">{name}</h4>
 
-      <ul className="flex self-start gap-[8px]">
+      <ul className="flex gap-[8px] self-start">
+        {liveUrl && (
+          <li>
+            <IconLink type="demo" href={liveUrl} />
+          </li>
+        )}
         <li>
-          <IconLink type="demo" href={urlDemo} />
-        </li>
-        <li>
-          <IconLink type="gh" href={urlGH} />
+          <IconLink type="gh" href={ghUrl} />
         </li>
       </ul>
 
-      <p className="text-primary self-start">
-        {locale === "en" ? description.en : description.uk}
-      </p>
+      <p className="text-primary self-start">{desc}</p>
 
       {role && (
         <p className="text-primary self-start">
           <span className="font-medium">
-            {locale === "en" ? "Position: " : "Посада: "}
+            {locale === 'en' ? 'Position: ' : 'Посада: '}
           </span>
-          {locale === "en" ? role.en : role.uk}
+          {role}
         </p>
       )}
 
-      <ul className="flex gap-[8px] justify-center flex-wrap">
-        {technologies.map(({ name, image }) => (
+      <ul className="flex flex-wrap justify-center gap-[8px]">
+        {techList.map(({ name, src }) => (
           <li key={name} className="flex flex-col items-center">
-            <TechLogo src={image} alt={name} size={32} />
-            <p className="font-extralight text-[8px] mt-auto">{name}</p>
+            <TechLogo src={src} alt={name} size={32} />
+            <p className="mt-auto text-[8px] font-extralight">{name}</p>
           </li>
         ))}
       </ul>

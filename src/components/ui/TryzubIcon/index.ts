@@ -1,1 +1,1 @@
-export * from "./TryzubIcon";
+export * from './TryzubIcon';

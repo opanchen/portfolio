@@ -6,22 +6,12 @@
       "contacts": "Contacts"
     }
   },
-  "Hero": {
-    "title": "Oleh Panchenko",
-    "subtitle": {
-      "1st": "Front-end developer",
-      "2nd": "Full-stack developer"
-    },
-    "tagline": "Cook borsch, write code and never stop exploring.",
-    "summary": "Having more than a year coding experience currently I'm working on learning new skills and expanding my technology stack. My goal is to build a career as a software developer in a reputed company where I can use my strengths to deliver good results in the long term and grow personally at the same time. So I'm particularly excited by the possibility of being surrounded by like-minded professionals who strive for development and are simply pleasant people to communicate with. If youʼre one of those people, please let me know.",
-    "button": "Cooperate"
-  },
   "Projects": {
     "title": "Projects",
     "kind": {
       "all": "All",
       "individual": "Individual",
-      "collaborations": "Collaborations"
+      "collaboration": "Collaborations"
     }
   },
   "Skills": {
@@ -30,33 +20,13 @@
       "title": "Technology stack"
     },
     "certificates": {
-      "title": "Certificates",
-      "goitFS": {
-        "title": "FULLSTACK DEVELOPER",
-        "from": "GoIT",
-        "urlDownload": "https://drive.google.com/file/d/1-2KL8Ryfa4jrE32QAA50qfDZWsnX-0kA/view?usp=sharing",
-        "desc": "Certificate of successful completion of the \"FullStack Online\" course at the GoIT school, during which basic knowledge of HTML + CSS, JavaScript, React.js and Node.js was acquired, lectures on Soft Skills and Career Skills were listened to, and 3 full team projects were implemented within the curriculum."
-      },
-      "softryzenFr": {
-        "title": "FRONTEND DEVELOPER",
-        "from": "SoftRyzen",
-        "urlDownload": "https://drive.google.com/file/d/1wDToG-Mv1EmXt7S6ZesOa9I9dcwsRmq-/view?usp=drive_link",
-        "desc": "Certificate of successful completion of the internship as Front-End Developer at SoftRyzen IT-company, during which experience of the development and presentation commercial projects was gained, management skills of work processes in a leadership position and general tech skills were improved."
-      }
+      "title": "Certificates"
     }
   },
   "Contacts": {
     "title": "Contact me",
-    "link-list": "gh, linkedIn, telegram, email",
-    "links": {
-      "gh": "https://github.com/opanchen",
-      "linkedIn": "https://www.linkedin.com/in/oleh-panchenko/",
-      "telegram": "https://t.me/opanchen",
-      "email": "mailto:opanchen.dev@gmail.com"
-    },
     "cv": {
-      "label": "Download CV",
-      "url": "https://drive.google.com/file/d/1uTYJc4NlYwfy3u_BjgyDT1QzZi9xD7Vc/view?usp=sharing"
+      "label": "Download CV"
     }
   },
   "Common": {

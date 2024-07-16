@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import { FaArrowUp } from "react-icons/fa6";
+import { FaArrowUp } from 'react-icons/fa6';
 
-import { ScrollToTopBtnProps } from "./types";
+import { ScrollToTopBtnProps } from './types';
 
 export const ScrollToTopBtn: React.FC<ScrollToTopBtnProps> = ({ label }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,11 +15,11 @@ export const ScrollToTopBtn: React.FC<ScrollToTopBtnProps> = ({ label }) => {
       window.scrollY > 500 ? setIsVisible(true) : setIsVisible(false);
     };
     // listen for scroll events
-    window.addEventListener("scroll", toggleVisibility);
+    window.addEventListener('scroll', toggleVisibility);
 
     // clear the listener on component unmount
     return () => {
-      window.removeEventListener("scroll", toggleVisibility);
+      window.removeEventListener('scroll', toggleVisibility);
     };
   }, []);
 
@@ -28,7 +28,7 @@ export const ScrollToTopBtn: React.FC<ScrollToTopBtnProps> = ({ label }) => {
     isVisible &&
       window.scrollTo({
         top: 0,
-        behavior: "auto",
+        behavior: 'auto',
       });
   };
 
@@ -37,8 +37,8 @@ export const ScrollToTopBtn: React.FC<ScrollToTopBtnProps> = ({ label }) => {
       type="button"
       onClick={scrollToTop}
       aria-label={label}
-      className={`fixed z-10 bottom-4 right-4 md:bottom-5 md:right-5 xl:bottom-8 xl:right-8 rounded-full p-2 outline-none border-[1px]  gradient-primary-alpha text-white-primary shadow-sm dark:shadow-white-shadow transition_prop hover:scale-110 hover:shadow focus:scale-110 focus:shadow focus:outline-none ${
-        isVisible ? "opacity-100" : "opacity-0"
+      className={`gradient-primary-alpha transition_prop fixed bottom-4 right-4 z-10 rounded-full border-[1px] p-2 text-white-primary shadow-sm outline-none hover:scale-110 hover:shadow focus:scale-110 focus:shadow focus:outline-none dark:shadow-white-shadow md:bottom-5 md:right-5 xl:bottom-8 xl:right-8 ${
+        isVisible ? 'opacity-100' : 'opacity-0'
       }`}
     >
       <FaArrowUp size={20} />

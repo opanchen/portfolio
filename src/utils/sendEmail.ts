@@ -1,33 +1,33 @@
-import { toast } from "react-toastify";
+import { toast } from 'react-toastify';
 
-import { FormData } from "@/components/ContactForm/types";
+import { FormData } from '@/components/ContactForm/types';
 
-export const sendEmail = (data: FormData, lang = "en") => {
+export const sendEmail = (data: FormData, lang = 'en') => {
   // console.log("SUBMIT: ", JSON.stringify(data));
 
-  const apiEndpoint = "/api/email";
+  const apiEndpoint = '/api/email';
 
   const textSuccess =
-    lang === "en"
-      ? "Your message was successfully sent."
-      : "Ваше повідомлення було успішно відправлено.";
+    lang === 'en'
+      ? 'Your message was successfully sent.'
+      : 'Ваше повідомлення було успішно відправлено.';
   const textError =
-    lang === "en"
-      ? "Something went wrong. Please try again later."
-      : "Щось пішло не так. Будь ласка, повторіть спробу пізніше.";
+    lang === 'en'
+      ? 'Something went wrong. Please try again later.'
+      : 'Щось пішло не так. Будь ласка, повторіть спробу пізніше.';
 
   fetch(apiEndpoint, {
-    method: "POST",
+    method: 'POST',
     body: JSON.stringify(data),
   })
-    .then((res) => res.json())
-    .then((response) => {
-      console.log("response:", response);
+    .then(res => res.json())
+    .then(response => {
+      console.log('response:', response);
 
       toast.success(textSuccess);
     })
-    .catch((err) => {
-      console.log("response with error: ", err);
+    .catch(err => {
+      console.log('response with error: ', err);
 
       toast.error(textError);
     });

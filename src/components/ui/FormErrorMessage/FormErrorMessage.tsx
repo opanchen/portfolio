@@ -1,6 +1,6 @@
-import { VscError } from "react-icons/vsc";
+import { VscError } from 'react-icons/vsc';
 
-import { FormErrorMessageProps } from "./types";
+import { FormErrorMessageProps } from './types';
 
 export const FormErrorMessage: React.FC<FormErrorMessageProps> = ({
   message,
@@ -10,7 +10,7 @@ export const FormErrorMessage: React.FC<FormErrorMessageProps> = ({
       <VscError />
       <p
         role="alert"
-        className="text-[12px] font-extralight leading-[2.0] tracking-[2.4px] text-red"
+        className="text-red text-[12px] font-extralight leading-[2.0] tracking-[2.4px]"
       >
         {message}
       </p>

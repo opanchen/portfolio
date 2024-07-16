@@ -1,26 +1,26 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
-import { useLocale } from "next-intl";
+import { useLocale } from 'next-intl';
 
 export const LangToggle: React.FC = () => {
   const currentLocale = useLocale();
 
-  const getLinkClassNames = (locale: "en" | "uk") => {
+  const getLinkClassNames = (locale: 'en' | 'uk') => {
     return `text-[14px] focus:outline-none group ${
-      currentLocale === locale && "pointer-events-none"
+      currentLocale === locale && 'pointer-events-none'
     }`;
   };
 
-  const getLabel = (locale: "en" | "uk") => {
-    if (locale === "en") {
-      return currentLocale === "en"
-        ? "Switch language of interface to English"
-        : "Переключити інтерфейс на Англійську";
+  const getLabel = (locale: 'en' | 'uk') => {
+    if (locale === 'en') {
+      return currentLocale === 'en'
+        ? 'Switch language of interface to English'
+        : 'Переключити інтерфейс на Англійську';
     } else {
-      return currentLocale === "en"
-        ? "Switch language of interface to Ukrainian"
-        : "Переключити мову інтерфейсу на Українську";
+      return currentLocale === 'en'
+        ? 'Switch language of interface to Ukrainian'
+        : 'Переключити мову інтерфейсу на Українську';
     }
   };
 
@@ -29,24 +29,24 @@ export const LangToggle: React.FC = () => {
       <li>
         <Link
           href="/en/"
-          className={getLinkClassNames("en")}
-          aria-label={getLabel("en")}
+          className={getLinkClassNames('en')}
+          aria-label={getLabel('en')}
         >
-          <div className="w-[32px] h-[20px] flex justify-center items-center overflow-hidden group-hover:scale-110 group-focus:scale-125 transition_prop relative">
+          <div className="transition_prop relative flex h-[20px] w-[32px] items-center justify-center overflow-hidden group-hover:scale-110 group-focus:scale-125">
             <Image
               src={
-                "http://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg"
+                'http://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg'
               }
               width={36}
               height={24}
               alt={
-                currentLocale === "en" ? "British flag" : "Британський прапор"
+                currentLocale === 'en' ? 'British flag' : 'Британський прапор'
               }
-              className="block cover"
+              className="cover block"
             />
             <div
-              className={`absolute top-0 bottom-0 left-0 w-full h-full bg-black-primary bg-opacity-[0.7] ${
-                currentLocale === "en" ? "block" : " hidden"
+              className={`absolute bottom-0 left-0 top-0 h-full w-full bg-black-primary bg-opacity-[0.7] ${
+                currentLocale === 'en' ? 'block' : 'hidden'
               }`}
             ></div>
           </div>
@@ -56,24 +56,24 @@ export const LangToggle: React.FC = () => {
       <li>
         <Link
           href="/uk/"
-          className={getLinkClassNames("uk")}
-          aria-label={getLabel("uk")}
+          className={getLinkClassNames('uk')}
+          aria-label={getLabel('uk')}
         >
-          <div className="w-[32px] h-[20px] flex justify-center items-center overflow-hidden group-hover:scale-110 group-focus:scale-125 transition_prop relative">
+          <div className="transition_prop relative flex h-[20px] w-[32px] items-center justify-center overflow-hidden group-hover:scale-110 group-focus:scale-125">
             <Image
               src={
-                "http://purecatamphetamine.github.io/country-flag-icons/3x2/UA.svg"
+                'http://purecatamphetamine.github.io/country-flag-icons/3x2/UA.svg'
               }
               width={36}
               height={24}
               alt={
-                currentLocale === "en" ? "Ukrainian flag" : "Український прапор"
+                currentLocale === 'en' ? 'Ukrainian flag' : 'Український прапор'
               }
-              className="block cover"
+              className="cover block"
             />
             <div
-              className={`absolute top-0 bottom-0 left-0 w-full h-full bg-black-primary bg-opacity-[0.7] ${
-                currentLocale === "uk" ? "block" : "hidden"
+              className={`absolute bottom-0 left-0 top-0 h-full w-full bg-black-primary bg-opacity-[0.7] ${
+                currentLocale === 'uk' ? 'block' : 'hidden'
               }`}
             ></div>
           </div>

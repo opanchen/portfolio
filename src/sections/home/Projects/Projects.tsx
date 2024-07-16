@@ -1,28 +1,28 @@
-import { useTranslations } from "next-intl";
+import { useTranslations } from 'next-intl';
 
-import { ProjectList } from "@/components/ProjectList/ProjectList";
-import { Container } from "@/components/ui/Container";
+import { ProjectList } from '@/components/ProjectList/ProjectList';
+import { Container } from '@/components/ui/Container';
 
-import projects from "@/data/projects.json";
+import { ProjectsProps } from './types';
 
-export const Projects: React.FC = () => {
-  const t = useTranslations("Projects");
+export const Projects: React.FC<ProjectsProps> = ({ data }) => {
+  const t = useTranslations('Projects');
 
   const tabLabels = {
-    all: t("kind.all"),
-    individual: t("kind.individual"),
-    collaborations: t("kind.collaborations"),
+    all: t('kind.all'),
+    individual: t('kind.individual'),
+    collaboration: t('kind.collaboration'),
   };
 
   return (
     <section id="projects" className="py-[16px]">
       <Container>
         <div className="">
-          <h2 className="mb-[16px] text-section-title text-center sm:text-left">
-            {t("title")}
+          <h2 className="text-section-title mb-[16px] text-center sm:text-left">
+            {t('title')}
           </h2>
 
-          <ProjectList projects={projects} tabLabels={tabLabels} />
+          <ProjectList projects={data} tabLabels={tabLabels} />
         </div>
       </Container>
     </section>

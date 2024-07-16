@@ -1,19 +1,19 @@
-"use client";
+'use client';
 
-import { useState, useRef, useMemo } from "react";
+import { useState, useRef, useMemo } from 'react';
 
-import { motion, useInView } from "framer-motion";
+import { motion, useInView } from 'framer-motion';
 
-import { ProjectCard } from "@/components/ui/ProjectCard";
-import { ProjectsTab } from "@/components/ui/ProjectsTab";
+import { ProjectCard } from '@/components/ui/ProjectCard';
+import { ProjectsTab } from '@/components/ui/ProjectsTab';
 
-import { ProjectListProps } from "./types";
+import { ProjectListProps } from './types';
 
 export const ProjectList: React.FC<ProjectListProps> = ({
   projects,
   tabLabels,
 }) => {
-  const [filter, setFilter] = useState("all");
+  const [filter, setFilter] = useState('all');
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -22,10 +22,11 @@ export const ProjectList: React.FC<ProjectListProps> = ({
     setFilter(tab);
   };
 
-  const filteredProjects = useMemo(
-    () => projects.filter(({ tags }) => tags.includes(filter)),
-    [filter, projects]
-  );
+  const filteredProjects = useMemo(() => {
+    return filter === 'all'
+      ? projects
+      : projects.filter(({ tags }) => tags === filter);
+  }, [filter, projects]);
 
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
@@ -34,8 +35,8 @@ export const ProjectList: React.FC<ProjectListProps> = ({
 
   return (
     <div>
-      <ul className="flex flex-wrap justify-center sm:justify-end items-center gap-[8px] md:gap-[16px] mb-[16px] sm:pr-[16px]">
-        {Object.keys(tabLabels).map((key) => {
+      <ul className="mb-[16px] flex flex-wrap items-center justify-center gap-[8px] sm:justify-end sm:pr-[16px] md:gap-[16px]">
+        {Object.keys(tabLabels).map(key => {
           return (
             <li key={key}>
               <ProjectsTab
@@ -57,10 +58,10 @@ export const ProjectList: React.FC<ProjectListProps> = ({
           <motion.li
             variants={cardVariants}
             initial="initial"
-            animate={isInView ? "animate" : "initial"}
+            animate={isInView ? 'animate' : 'initial'}
             transition={{ duration: 0.3, delay: index * 0.4 }}
             className="project-grid_item"
-            key={project.title}
+            key={project.name}
           >
             <ProjectCard project={project} />
           </motion.li>

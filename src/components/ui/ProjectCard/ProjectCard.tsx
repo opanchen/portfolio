@@ -1,67 +1,65 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import Image from "next/image";
-import { useLocale } from "next-intl";
+import { useState } from 'react';
+import Image from 'next/image';
+import { useLocale } from 'next-intl';
 
-import { AnimatePresence } from "framer-motion";
-import { FaRegEye } from "react-icons/fa";
+import { AnimatePresence } from 'framer-motion';
+import { FaRegEye } from 'react-icons/fa';
 
-import { Modal } from "@/components/Modal";
-import { ProjectArticle } from "@/components/ProjectArticle";
+import { Modal } from '@/components/Modal';
+import { ProjectArticle } from '@/components/ProjectArticle';
 
-import type { Project } from "@/types";
+import { ProjectCardProps } from './types';
 
-type Props = {
-  project: Project;
-};
-
-export const ProjectCard: React.FC<Props> = ({ project }: Props) => {
+export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const locale = useLocale();
 
   const toggleModal = () => {
-    setIsModalOpen((prevState) => !prevState);
+    setIsModalOpen(prevState => !prevState);
   };
 
-  const { title, images, startDate, tech } = project;
+  const { name, images, year, techList } = project;
+
+  const tech = techList.map(item => item.name).join(' • ');
+
+  const imagePlaceholderPath = '/assets/images/placeholder.jpg';
   return (
     <>
-      <div className="group flex flex-col w-full h-full p-[8px] sm:p-[16px] rounded-md shadow dark:shadow-white-shadow bg-white-primary dark:bg-black-secondary hover:scale-105 focus:outline-none focus:scale-105 transition_prop">
+      <div className="transition_prop group flex h-full w-full flex-col rounded-md bg-white-primary p-[8px] shadow hover:scale-105 focus:scale-105 focus:outline-none dark:bg-black-secondary dark:shadow-white-shadow sm:p-[16px]">
         <div className="relative aspect-[4/3] overflow-hidden">
           <Image
-            src={`/assets/${images[0]}`}
-            alt={title}
+            src={(images && images[0]?.path) || imagePlaceholderPath}
+            alt={name}
             width={400}
             height={300}
-            className="w-full h-full object-cover"
+            className="h-full w-full object-cover"
           />
-          <div className="absolute bottom-0 left-0 w-full h-full translate-y-full group-hover:translate-y-0 transition_prop flex items-center justify-center bg-white-primary/80 dark:bg-black-secondary/80">
+          <div className="transition_prop absolute bottom-0 left-0 flex h-full w-full translate-y-full items-center justify-center bg-white-primary/80 group-hover:translate-y-0 dark:bg-black-secondary/80">
             <button
-              className="eye-btn relative text-gray-primary dark:text-white-primary hover:scale-125 focus:outline-none focus:scale-125 transition_prop"
+              className="eye-btn transition_prop relative text-gray-primary hover:scale-125 focus:scale-125 focus:outline-none dark:text-white-primary"
               type="button"
               onClick={toggleModal}
               aria-label={
-                locale === "en" ? "View info" : "Переглянути інформацію"
+                locale === 'en' ? 'View info' : 'Переглянути інформацію'
               }
             >
-              <span className="block eye-btn_icon">
+              <span className="eye-btn_icon block">
                 <FaRegEye size={32} />
               </span>
             </button>
           </div>
         </div>
 
-        <p className="self-end mb-8px font-extralight text-[14px]">
-          {startDate}
-        </p>
+        <p className="mb-8px self-end text-[14px] font-extralight">{year}</p>
 
-        <h3 className="mb-8px font-medium text-[16px] md:text-[20px] text-gray-primary dark:text-white-primary text-center">
-          {title}
+        <h3 className="mb-8px text-center text-[16px] font-medium text-gray-primary dark:text-white-primary md:text-[20px]">
+          {name}
         </h3>
 
-        <p className="font-extralight text-[12px] text-center">{tech}</p>
+        <p className="text-center text-[12px] font-extralight">{tech}</p>
       </div>
 
       <AnimatePresence>

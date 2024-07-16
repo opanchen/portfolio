@@ -1,1 +1,1 @@
-export * from "./AnimatedTypeLine";
+export * from './AnimatedTypeLine';

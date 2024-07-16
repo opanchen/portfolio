@@ -22,10 +22,24 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
 
   const sliderRef = useRef<any>(null);
 
-  const { title, description, role, technologies, images, urlDemo, urlGH } =
-    project;
+  const {
+    name,
+    desc_en,
+    desc_uk,
+    role_en,
+    role_uk,
+    techList,
+    images,
+    liveUrl,
+    ghUrl,
+  } = project;
 
-  const slides = images;
+  const desc = locale === 'en' ? desc_en : desc_uk;
+  const role = locale === 'en' ? role_en : role_uk;
+
+  const slides = images || [];
+
+  const imagePlaceholderPath = '/assets/images/placeholder.jpg';
 
   return (
     <article className="flex w-full flex-col items-center gap-[16px] p-[16px]">
@@ -48,12 +62,12 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
           }}
           modules={[Navigation]}
         >
-          {slides.map((path, index) => (
+          {slides.map(({ path, alt }, index) => (
             <SwiperSlide key={index}>
               <div className="aspect-[4/3] w-full overflow-hidden rounded-md">
                 <Image
-                  src={`/assets/${path}`}
-                  alt={title}
+                  src={path || imagePlaceholderPath}
+                  alt={alt}
                   width={600}
                   height={450}
                   className="inline-block h-full w-full object-cover"
@@ -88,34 +102,34 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
         </button>
       </div>
 
-      <h4 className="text-[20px] font-medium">{title}</h4>
+      <h4 className="text-[20px] font-medium">{name}</h4>
 
       <ul className="flex gap-[8px] self-start">
+        {liveUrl && (
+          <li>
+            <IconLink type="demo" href={liveUrl} />
+          </li>
+        )}
         <li>
-          <IconLink type="demo" href={urlDemo} />
-        </li>
-        <li>
-          <IconLink type="gh" href={urlGH} />
+          <IconLink type="gh" href={ghUrl} />
         </li>
       </ul>
 
-      <p className="text-primary self-start">
-        {locale === 'en' ? description.en : description.uk}
-      </p>
+      <p className="text-primary self-start">{desc}</p>
 
       {role && (
         <p className="text-primary self-start">
           <span className="font-medium">
             {locale === 'en' ? 'Position: ' : 'Посада: '}
           </span>
-          {locale === 'en' ? role.en : role.uk}
+          {role}
         </p>
       )}
 
       <ul className="flex flex-wrap justify-center gap-[8px]">
-        {technologies.map(({ name, image }) => (
+        {techList.map(({ name, src }) => (
           <li key={name} className="flex flex-col items-center">
-            <TechLogo src={image} alt={name} size={32} />
+            <TechLogo src={src} alt={name} size={32} />
             <p className="mt-auto text-[8px] font-extralight">{name}</p>
           </li>
         ))}

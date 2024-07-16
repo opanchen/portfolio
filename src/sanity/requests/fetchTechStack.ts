@@ -11,5 +11,5 @@ export const fetchTechStack = async () => {
       next: { revalidate: 3600 },
     },
   );
-  return res?.techStackList || [];
+  return res?.techStackList.filter(item => item.isShown) || [];
 };

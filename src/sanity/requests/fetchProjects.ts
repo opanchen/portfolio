@@ -11,5 +11,5 @@ export const fetchProjects = async () => {
       next: { revalidate: 3600 },
     },
   );
-  return res?.projectList || [];
+  return res?.projectList.filter(item => item.isShown) || [];
 };

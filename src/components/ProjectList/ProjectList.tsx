@@ -22,10 +22,11 @@ export const ProjectList: React.FC<ProjectListProps> = ({
     setFilter(tab);
   };
 
-  const filteredProjects = useMemo(
-    () => projects.filter(({ tags }) => tags.includes(filter)),
-    [filter, projects],
-  );
+  const filteredProjects = useMemo(() => {
+    return filter === 'all'
+      ? projects
+      : projects.filter(({ tags }) => tags === filter);
+  }, [filter, projects]);
 
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
@@ -60,7 +61,7 @@ export const ProjectList: React.FC<ProjectListProps> = ({
             animate={isInView ? 'animate' : 'initial'}
             transition={{ duration: 0.3, delay: index * 0.4 }}
             className="project-grid_item"
-            key={project.title}
+            key={project.name}
           >
             <ProjectCard project={project} />
           </motion.li>

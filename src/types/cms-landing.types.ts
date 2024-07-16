@@ -4,6 +4,9 @@ export type Project = {
   year: string;
   ghUrl: string;
   liveUrl: string | null;
+  isShown: boolean | null;
+  role_en: string | null;
+  role_uk: string | null;
   desc_en: string;
   desc_uk: string;
   techList: Technology[];

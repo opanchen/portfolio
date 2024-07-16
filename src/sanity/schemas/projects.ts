@@ -44,11 +44,20 @@ export const projects = {
               type: 'string',
             }),
             defineField({
-              name: 'liveURL',
+              name: 'liveUrl',
               title: 'Live URL',
               type: 'string',
             }),
-
+            defineField({
+              name: 'role_en',
+              title: 'Role EN',
+              type: 'text',
+            }),
+            defineField({
+              name: 'role_uk',
+              title: 'Role UK',
+              type: 'text',
+            }),
             defineField({
               name: 'desc_en',
               title: 'Description EN',

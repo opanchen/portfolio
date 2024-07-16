@@ -3,15 +3,15 @@ import { useTranslations } from 'next-intl';
 import { ProjectList } from '@/components/ProjectList/ProjectList';
 import { Container } from '@/components/ui/Container';
 
-import projects from '@/data/projects.json';
+import { ProjectsProps } from './types';
 
-export const Projects: React.FC = () => {
+export const Projects: React.FC<ProjectsProps> = ({ data }) => {
   const t = useTranslations('Projects');
 
   const tabLabels = {
     all: t('kind.all'),
     individual: t('kind.individual'),
-    collaborations: t('kind.collaborations'),
+    collaboration: t('kind.collaboration'),
   };
 
   return (
@@ -22,7 +22,7 @@ export const Projects: React.FC = () => {
             {t('title')}
           </h2>
 
-          <ProjectList projects={projects} tabLabels={tabLabels} />
+          <ProjectList projects={data} tabLabels={tabLabels} />
         </div>
       </Container>
     </section>

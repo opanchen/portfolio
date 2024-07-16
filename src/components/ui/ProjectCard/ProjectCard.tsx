@@ -10,13 +10,9 @@ import { FaRegEye } from 'react-icons/fa';
 import { Modal } from '@/components/Modal';
 import { ProjectArticle } from '@/components/ProjectArticle';
 
-import type { Project } from '@/types';
+import { ProjectCardProps } from './types';
 
-type Props = {
-  project: Project;
-};
-
-export const ProjectCard: React.FC<Props> = ({ project }: Props) => {
+export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const locale = useLocale();
@@ -25,14 +21,18 @@ export const ProjectCard: React.FC<Props> = ({ project }: Props) => {
     setIsModalOpen(prevState => !prevState);
   };
 
-  const { title, images, startDate, tech } = project;
+  const { name, images, year, techList } = project;
+
+  const tech = techList.map(item => item.name).join(' • ');
+
+  const imagePlaceholderPath = '/assets/images/placeholder.jpg';
   return (
     <>
       <div className="transition_prop group flex h-full w-full flex-col rounded-md bg-white-primary p-[8px] shadow hover:scale-105 focus:scale-105 focus:outline-none dark:bg-black-secondary dark:shadow-white-shadow sm:p-[16px]">
         <div className="relative aspect-[4/3] overflow-hidden">
           <Image
-            src={`/assets/${images[0]}`}
-            alt={title}
+            src={(images && images[0]?.path) || imagePlaceholderPath}
+            alt={name}
             width={400}
             height={300}
             className="h-full w-full object-cover"
@@ -53,12 +53,10 @@ export const ProjectCard: React.FC<Props> = ({ project }: Props) => {
           </div>
         </div>
 
-        <p className="mb-8px self-end text-[14px] font-extralight">
-          {startDate}
-        </p>
+        <p className="mb-8px self-end text-[14px] font-extralight">{year}</p>
 
         <h3 className="mb-8px text-center text-[16px] font-medium text-gray-primary dark:text-white-primary md:text-[20px]">
-          {title}
+          {name}
         </h3>
 
         <p className="text-center text-[12px] font-extralight">{tech}</p>

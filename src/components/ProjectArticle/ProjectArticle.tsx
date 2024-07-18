@@ -71,6 +71,9 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
                   width={600}
                   height={450}
                   className="inline-block h-full w-full object-cover"
+                  placeholder="blur"
+                  blurDataURL={imagePlaceholderPath}
+                  priority={index === 0}
                 />
               </div>
             </SwiperSlide>

@@ -5,19 +5,46 @@ import { useLocale } from 'next-intl';
 import { useState } from 'react';
 
 import { PiStudentLight } from 'react-icons/pi';
+import { GoFileCode } from 'react-icons/go';
+import { LiaAtomSolid } from 'react-icons/lia';
+import { HiLanguage } from 'react-icons/hi2';
+import { GrCertificate } from 'react-icons/gr';
 import { MdOutlineFlipCameraAndroid } from 'react-icons/md';
 
 import { IconLink } from '@/components/ui/IconLink';
 
+import { CertificateIcon } from '@/types/cms-landing.types';
 import { CertificateCardProps } from './types';
 
+const getCertificateIcon = (icon: CertificateIcon, size: number) => {
+  switch (icon) {
+    case 'study':
+      return <PiStudentLight size={size} />;
+
+    case 'atom':
+      return <LiaAtomSolid size={size} />;
+
+    case 'code':
+      return <GoFileCode size={size} />;
+
+    case 'lang':
+      return <HiLanguage size={size} />;
+
+    default:
+      return <GrCertificate size={size} />;
+  }
+};
+
 export const CertificateCard: React.FC<CertificateCardProps> = ({
-  data: { name, desc_en, desc_uk, company, uploadUrl },
+  data: { name, desc_en, desc_uk, company, uploadUrl, icon },
 }) => {
   const [focus, setFocus] = useState(false);
 
   const locale = useLocale();
   const desc = locale === 'en' ? desc_en : desc_uk;
+
+  const certificateIcon = getCertificateIcon(icon, 120);
+
   return (
     <li
       //   tabIndex={0}
@@ -28,7 +55,7 @@ export const CertificateCard: React.FC<CertificateCardProps> = ({
       <div className="certificate-card-content relative h-full w-full">
         {/* Front side */}
         <div className="certificate-card-front flex flex-col items-center justify-center gap-2">
-          <PiStudentLight size={120} />
+          {certificateIcon}
 
           <h4 className="text-center font-medium uppercase">{name}</h4>
 

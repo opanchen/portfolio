@@ -34,9 +34,12 @@ export type HeroText = {
   _type: string;
 };
 
+export type CertificateIcon = 'study' | 'atom' | 'code' | 'lang' | null;
+
 export type Certificate = {
   name: string;
   isShown: boolean | null;
+  icon: CertificateIcon;
   uploadUrl: string;
   desc_en: string;
   desc_uk: string;

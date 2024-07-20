@@ -25,6 +25,14 @@ export const certificates = {
               type: 'boolean',
             }),
             defineField({
+              name: 'icon',
+              title: 'Icon',
+              type: 'string',
+              options: {
+                list: ['study', 'atom', 'code', 'lang'],
+              },
+            }),
+            defineField({
               name: 'uploadUrl',
               title: 'Upload URL',
               type: 'string',

@@ -9,7 +9,9 @@ export const fetchProjects = async () => {
     {},
     {
       next: { revalidate: 3600 },
+      // next: { revalidate: 5 },
     },
   );
   return res?.projectList.filter(item => item.isShown) || [];
+  // return res?.projectList || [];
 };

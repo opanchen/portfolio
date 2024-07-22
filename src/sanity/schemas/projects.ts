@@ -44,6 +44,11 @@ export const projects = {
               type: 'string',
             }),
             defineField({
+              name: 'ghUrlAdd',
+              title: 'GitHub URL (additional)',
+              type: 'string',
+            }),
+            defineField({
               name: 'liveUrl',
               title: 'Live URL',
               type: 'string',

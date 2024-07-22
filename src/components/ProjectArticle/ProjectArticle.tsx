@@ -32,6 +32,7 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
     images,
     liveUrl,
     ghUrl,
+    ghUrlAdd,
   } = project;
 
   const desc = locale === 'en' ? desc_en : desc_uk;
@@ -113,9 +114,16 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
             <IconLink type="demo" href={liveUrl} />
           </li>
         )}
+
         <li>
           <IconLink type="gh" href={ghUrl} />
         </li>
+
+        {ghUrlAdd && (
+          <li>
+            <IconLink type="gh" href={ghUrlAdd} />
+          </li>
+        )}
       </ul>
 
       <p className="text-primary self-start">{desc}</p>

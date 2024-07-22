@@ -7,6 +7,7 @@ export const projectsQuery = groq`
        tags,
        year,
        ghUrl,
+       ghUrlAdd,
        liveUrl,
        role_en,
        role_uk,

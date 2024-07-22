@@ -3,6 +3,7 @@ export type Project = {
   tags: string;
   year: string;
   ghUrl: string;
+  ghUrlAdd: string | null;
   liveUrl: string | null;
   isShown: boolean | null;
   role_en: string | null;

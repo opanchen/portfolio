@@ -79,7 +79,7 @@ export const Modal: React.FC<ModalProps> = ({ children, onClose }) => {
         exit="exit"
       >
         <button
-          className="transition_prop translate-x-[-16px] translate-y-[16px] self-end hover:scale-125 focus:scale-125 focus:outline-none"
+          className="transition_prop translate-x-[-16px] translate-y-[16px] self-end hover:scale-125 focus:scale-125"
           onClick={onClose}
           type="button"
           aria-label={locale === 'en' ? 'Close' : 'Закрити'}

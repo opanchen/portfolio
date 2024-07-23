@@ -38,7 +38,7 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
 
               <Link
                 href="#contacts"
-                className="gradient-primary focus-shadow-md transition_prop bg-white group flex w-full cursor-pointer justify-center self-center rounded-xl px-[16px] py-[8px] text-[18px] font-medium uppercase text-white-primary shadow-sm hover:shadow-md focus:outline-none dark:bg-black-secondary dark:shadow-white-shadow sm:self-start xl:w-[400px]"
+                className="gradient-primary focus-shadow-md transition_prop bg-white group flex w-full cursor-pointer justify-center self-center rounded-xl px-[16px] py-[8px] text-[18px] font-medium uppercase text-white-primary shadow-sm hover:shadow-md focus:shadow-md dark:bg-black-secondary dark:shadow-white-shadow sm:self-start xl:w-[400px]"
               >
                 <span className="transition_prop inline-block group-hover:scale-110">
                   {heroBtnLabel}

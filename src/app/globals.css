@@ -41,7 +41,7 @@
 }
 
 .form_input {
-  @apply p-[4px] text-[14px] font-extralight placeholder:text-gray-400 placeholder:opacity-100 focus:outline-none;
+  @apply p-[4px] text-[14px] font-extralight placeholder:text-gray-400 placeholder:opacity-100;
 }
 
 .form_input:-webkit-autofill,

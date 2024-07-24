@@ -71,7 +71,7 @@ export const BurgerBtn: React.FC<BurgerBtnProps> = ({
     <button
       onClick={handleClick}
       aria-label={getLabel()}
-      className="transition_prop absolute right-0 top-[16px] z-10 stroke-current hover:scale-110 focus:scale-110 focus:outline-none md:hidden"
+      className="transition_prop absolute right-0 top-[16px] z-10 stroke-current hover:scale-110 focus:scale-110 md:hidden"
     >
       <svg width="24" height="24" viewBox="0 0 24 24">
         <motion.path animate={animation} variants={path01Variants} />

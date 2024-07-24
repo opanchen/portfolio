@@ -7,7 +7,7 @@ import { useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import { AiOutlineClose } from 'react-icons/ai';
 
-import { disablePageTabFocus, restorePageTabFocus } from '@/utils';
+import { disablePageTabFocusModal, restorePageTabFocusModal } from '@/utils';
 
 import { ModalProps } from './type';
 
@@ -49,11 +49,11 @@ export const Modal: React.FC<ModalProps> = ({ children, onClose }) => {
     };
 
     window.addEventListener('keydown', handleKeyDown);
-    disablePageTabFocus();
+    disablePageTabFocusModal();
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
-      restorePageTabFocus();
+      restorePageTabFocusModal();
     };
   }, [onClose]);
 

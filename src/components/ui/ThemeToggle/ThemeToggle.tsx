@@ -31,7 +31,7 @@ export const ThemeToggle: React.FC = () => {
   return (
     <>
       <button
-        className="transition_prop relative flex h-[24px] w-[56px] cursor-pointer items-center rounded-full bg-blue-sky p-[4px] shadow-sm hover:scale-110 hover:shadow focus:scale-110 focus:shadow dark:bg-black-primary dark:shadow-white-shadow"
+        className="transition_prop focus-visible::scale-110 relative flex h-[24px] w-[56px] cursor-pointer items-center rounded-full bg-blue-sky p-[4px] shadow-sm hover:scale-110 hover:shadow focus:shadow dark:bg-black-primary dark:shadow-white-shadow"
         onClick={toggleTheme}
         type="button"
         aria-label={label}

@@ -83,7 +83,7 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
 
         <button
           type="button"
-          className="prev transition_prop absolute left-[-8px] top-1/2 translate-y-[-50%] hover:scale-125 focus:scale-125 sm:left-[-16px] md:left-[-16px] lg:left-0 2xl:left-[-20px]"
+          className="prev transition_prop focus-visible::scale-125 absolute left-[-8px] top-1/2 translate-y-[-50%] hover:scale-125 sm:left-[-16px] md:left-[-16px] lg:left-0 2xl:left-[-20px]"
           aria-label={
             locale === 'en' ? 'Previous picture' : 'Попереднє зображення'
           }
@@ -96,7 +96,7 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
 
         <button
           type="button"
-          className="next transition_prop absolute right-[-8px] top-1/2 translate-y-[-50%] hover:scale-125 focus:scale-125 sm:right-[-16px] md:right-[-16px] lg:right-0 2xl:right-[-20px]"
+          className="next transition_prop absolute right-[-8px] top-1/2 translate-y-[-50%] hover:scale-125 focus-visible:scale-125 sm:right-[-16px] md:right-[-16px] lg:right-0 2xl:right-[-20px]"
           aria-label={locale === 'en' ? 'Next picture' : 'Наступне зображення'}
         >
           <BsChevronCompactRight

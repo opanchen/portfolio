@@ -12,7 +12,8 @@
       "all": "Всі",
       "individual": "Індивідуальні",
       "collaboration": "Колаборації"
-    }
+    },
+    "showMoreBtnLabel": "Показати більше"
   },
   "Skills": {
     "title": "Навички",

@@ -12,7 +12,8 @@
       "all": "All",
       "individual": "Individual",
       "collaboration": "Collaborations"
-    }
+    },
+    "showMoreBtnLabel": "Show more"
   },
   "Skills": {
     "title": "Skills",

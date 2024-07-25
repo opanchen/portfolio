@@ -95,7 +95,7 @@ export const ContactForm: React.FC = () => {
           )}
         </label>
         <button
-          className="gradient-primary transition_prop group relative self-end bg-clip-text text-[20px] font-bold uppercase text-transparent hover:scale-110 focus:scale-110 focus:outline-none md:self-start"
+          className="gradient-primary transition_prop group relative self-end bg-clip-text text-[20px] font-bold uppercase text-transparent hover:scale-110 focus:scale-110 md:self-start"
           type="submit"
         >
           <span className="submit-btn_text-outline">

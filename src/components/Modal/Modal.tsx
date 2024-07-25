@@ -5,8 +5,9 @@ import { createPortal } from 'react-dom';
 import { useLocale } from 'next-intl';
 
 import { motion } from 'framer-motion';
-
 import { AiOutlineClose } from 'react-icons/ai';
+
+import { disablePageTabFocusModal, restorePageTabFocusModal } from '@/utils';
 
 import { ModalProps } from './type';
 
@@ -48,9 +49,11 @@ export const Modal: React.FC<ModalProps> = ({ children, onClose }) => {
     };
 
     window.addEventListener('keydown', handleKeyDown);
+    disablePageTabFocusModal();
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
+      restorePageTabFocusModal();
     };
   }, [onClose]);
 
@@ -76,7 +79,7 @@ export const Modal: React.FC<ModalProps> = ({ children, onClose }) => {
         exit="exit"
       >
         <button
-          className="transition_prop translate-x-[-16px] translate-y-[16px] self-end hover:scale-125 focus:scale-125 focus:outline-none"
+          className="transition_prop translate-x-[-16px] translate-y-[16px] self-end hover:scale-125 focus:scale-125"
           onClick={onClose}
           type="button"
           aria-label={locale === 'en' ? 'Close' : 'Закрити'}

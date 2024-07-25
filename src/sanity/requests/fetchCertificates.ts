@@ -11,5 +11,5 @@ export const fetchCertificates = async () => {
       next: { revalidate: 3600 },
     },
   );
-  return res?.certificateList || [];
+  return res?.certificateList.filter(item => item.isShown) || [];
 };

@@ -5,6 +5,7 @@ export const certificatesQuery = groq`
   certificateList[] {
     name,
     isShown,
+    icon,
     uploadUrl,
     desc_en,
     desc_uk,

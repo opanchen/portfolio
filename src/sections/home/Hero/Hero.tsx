@@ -1,11 +1,10 @@
-import Link from 'next/link';
-
 import { useLocale } from 'next-intl';
 
 import { HeroImage } from '@/components/ui/HeroImage';
 import { HeroAnimationWrapper } from '@/components/ui/HeroAnimationWrapper';
 import { AnimatedTypeLine } from '@/components/ui/AnimatedTypeLine';
 import { Container } from '@/components/ui/Container';
+import { HeroButton } from '@/components/ui/HeroButton';
 
 import { HeroResponse } from '@/types/cms-landing.types';
 import { HeroProps } from './types';
@@ -36,14 +35,7 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
               </p>
               <p className="text-primary">{about}</p>
 
-              <Link
-                href="#contacts"
-                className="gradient-primary focus-shadow-md transition_prop bg-white group flex w-full cursor-pointer justify-center self-center rounded-xl px-[16px] py-[8px] text-[18px] font-medium uppercase text-white-primary shadow-sm hover:shadow-md focus:outline-none dark:bg-black-secondary dark:shadow-white-shadow sm:self-start xl:w-[400px]"
-              >
-                <span className="transition_prop inline-block group-hover:scale-110">
-                  {heroBtnLabel}
-                </span>
-              </Link>
+              <HeroButton label={heroBtnLabel} />
             </div>
           </HeroAnimationWrapper>
         </div>

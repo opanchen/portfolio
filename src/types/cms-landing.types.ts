@@ -3,6 +3,7 @@ export type Project = {
   tags: string;
   year: string;
   ghUrl: string;
+  ghUrlAdd: string | null;
   liveUrl: string | null;
   isShown: boolean | null;
   role_en: string | null;
@@ -34,9 +35,12 @@ export type HeroText = {
   _type: string;
 };
 
+export type CertificateIcon = 'study' | 'atom' | 'code' | 'lang' | null;
+
 export type Certificate = {
   name: string;
   isShown: boolean | null;
+  icon: CertificateIcon;
   uploadUrl: string;
   desc_en: string;
   desc_uk: string;

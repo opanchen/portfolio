@@ -41,7 +41,7 @@
 }
 
 .form_input {
-  @apply p-[4px] text-[14px] font-extralight placeholder:text-gray-400 placeholder:opacity-100 focus:outline-none;
+  @apply p-[4px] text-[14px] font-extralight placeholder:text-gray-400 placeholder:opacity-100;
 }
 
 .form_input:-webkit-autofill,
@@ -61,9 +61,34 @@
   flex-basis: calc((100% - 1 * 16px) / 2);
 }
 
+/* Certificate card */
 .certificate-card {
   flex-basis: calc((100%) / 1);
+  perspective: 1000px;
 }
+
+.certificate-card-content {
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.certificate-card-flip .certificate-card-content,
+.certificate-card:focus .certificate-card-content,
+.certificate-card:hover .certificate-card-content {
+  transform: rotateY(180deg);
+}
+
+.certificate-card-front,
+.certificate-card-back {
+  backface-visibility: hidden;
+  @apply absolute h-full w-full rounded-md bg-white-primary p-[16px] text-gray-primary shadow dark:bg-black-secondary dark:text-white-primary dark:shadow-white-shadow;
+}
+
+.certificate-card-back {
+  transform: rotateY(180deg);
+  @apply relative;
+}
+/* --- */
 
 .eye-btn_icon::before {
   content: '';

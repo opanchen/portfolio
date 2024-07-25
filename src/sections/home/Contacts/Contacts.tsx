@@ -45,7 +45,7 @@ export const Contacts: React.FC<ContactsProps> = ({ data }) => {
               href={data.cv}
               target="_blank"
               rel="nofollow noopener noreferrer"
-              className="transition_prop w-full rounded-md bg-white-primary p-[16px] text-center not-italic text-gray-primary shadow hover:scale-105 focus:scale-105 focus:outline-none dark:bg-black-secondary dark:text-white-primary dark:shadow-white-shadow pre-sm:w-[240px] md:mb-auto md:w-full xl:w-[284px]"
+              className="transition_prop w-full rounded-md bg-white-primary p-[16px] text-center not-italic text-gray-primary shadow hover:scale-105 focus-visible:scale-105 dark:bg-black-secondary dark:text-white-primary dark:shadow-white-shadow pre-sm:w-[240px] md:mb-auto md:w-full xl:w-[284px]"
             >
               {t('cv.label')}
             </Link>
@@ -54,7 +54,7 @@ export const Contacts: React.FC<ContactsProps> = ({ data }) => {
               href={`mailto:${data.email}`}
               target="_blank"
               rel="nofollow noopener noreferrer"
-              className="transition_prop text-[14px] font-normal not-italic text-gray-primary underline-offset-4 hover:underline focus:underline focus:outline-none dark:text-gray-secondary"
+              className="transition_prop text-[14px] font-normal not-italic text-gray-primary underline-offset-4 hover:underline focus-visible:underline dark:text-gray-secondary"
             >
               {data.email}
             </Link>

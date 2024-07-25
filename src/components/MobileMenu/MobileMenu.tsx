@@ -8,6 +8,11 @@ import { MainNav } from '@/components/MainNav';
 import { LangToggle } from '@/components/ui/LangToggle';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
 
+import {
+  disablePageTabFocusMobMenu,
+  restorePageTabFocusMobMenu,
+} from '@/utils';
+
 import { MobileMenuProps } from './types';
 
 const dropIn = {
@@ -36,8 +41,10 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
 }) => {
   useEffect(() => {
     document.body.style.overflow = 'hidden';
+    disablePageTabFocusMobMenu();
     return () => {
       document.body.style.overflow = 'unset';
+      restorePageTabFocusMobMenu();
     };
   }, []);
 

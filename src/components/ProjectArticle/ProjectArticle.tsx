@@ -32,6 +32,7 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
     images,
     liveUrl,
     ghUrl,
+    ghUrlAdd,
   } = project;
 
   const desc = locale === 'en' ? desc_en : desc_uk;
@@ -71,6 +72,9 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
                   width={600}
                   height={450}
                   className="inline-block h-full w-full object-cover"
+                  placeholder="blur"
+                  blurDataURL={imagePlaceholderPath}
+                  priority={index === 0}
                 />
               </div>
             </SwiperSlide>
@@ -79,7 +83,7 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
 
         <button
           type="button"
-          className="prev transition_prop absolute left-[-8px] top-1/2 translate-y-[-50%] hover:scale-125 focus:scale-125 focus:outline-none sm:left-[-16px] md:left-[-16px] lg:left-0 2xl:left-[-20px]"
+          className="prev transition_prop focus-visible::scale-125 absolute left-[-8px] top-1/2 translate-y-[-50%] hover:scale-125 sm:left-[-16px] md:left-[-16px] lg:left-0 2xl:left-[-20px]"
           aria-label={
             locale === 'en' ? 'Previous picture' : 'Попереднє зображення'
           }
@@ -92,7 +96,7 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
 
         <button
           type="button"
-          className="next transition_prop absolute right-[-8px] top-1/2 translate-y-[-50%] hover:scale-125 focus:scale-125 focus:outline-none sm:right-[-16px] md:right-[-16px] lg:right-0 2xl:right-[-20px]"
+          className="next transition_prop absolute right-[-8px] top-1/2 translate-y-[-50%] hover:scale-125 focus-visible:scale-125 sm:right-[-16px] md:right-[-16px] lg:right-0 2xl:right-[-20px]"
           aria-label={locale === 'en' ? 'Next picture' : 'Наступне зображення'}
         >
           <BsChevronCompactRight
@@ -110,9 +114,16 @@ export const ProjectArticle: React.FC<ProjectArticleProps> = ({ project }) => {
             <IconLink type="demo" href={liveUrl} />
           </li>
         )}
+
         <li>
           <IconLink type="gh" href={ghUrl} />
         </li>
+
+        {ghUrlAdd && (
+          <li>
+            <IconLink type="gh" href={ghUrlAdd} />
+          </li>
+        )}
       </ul>
 
       <p className="text-primary self-start">{desc}</p>

@@ -22,7 +22,11 @@ export const Projects: React.FC<ProjectsProps> = ({ data }) => {
             {t('title')}
           </h2>
 
-          <ProjectList projects={data} tabLabels={tabLabels} />
+          <ProjectList
+            projects={data}
+            tabLabels={tabLabels}
+            showMoreBtnLabel={t('showMoreBtnLabel')}
+          />
         </div>
       </Container>
     </section>

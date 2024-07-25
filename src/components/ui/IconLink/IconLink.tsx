@@ -111,10 +111,9 @@ export const IconLink: React.FC<IconLinkProps> = ({
   };
 
   const footerClassNames =
-    'aspect-square flex items-center justify-center p-[8px] rounded-md shadow dark:shadow-white-shadow bg-white-primary text-gray-primary dark:bg-black-secondary dark:text-white-primary focus:outline-none hover:scale-110 focus:scale-110 transition_prop';
+    'aspect-square flex items-center justify-center p-[8px] rounded-md shadow dark:shadow-white-shadow bg-white-primary text-gray-primary dark:bg-black-secondary dark:text-white-primary hover:scale-110 focus-visible:scale-110 transition_prop';
 
-  const classNames =
-    location === 'footer' ? footerClassNames : 'group focus:outline-none';
+  const classNames = location === 'footer' ? footerClassNames : 'group';
 
   return (
     <Link

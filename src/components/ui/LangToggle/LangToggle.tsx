@@ -7,8 +7,8 @@ export const LangToggle: React.FC = () => {
   const currentLocale = useLocale();
 
   const getLinkClassNames = (locale: 'en' | 'uk') => {
-    return `text-[14px] focus:outline-none group ${
-      currentLocale === locale && 'pointer-events-none'
+    return `text-[14px] group ${
+      currentLocale === locale && 'pointer-events-none focus:outline-none'
     }`;
   };
 

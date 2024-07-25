@@ -1,17 +1,16 @@
-import { useLocale, useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 import { PiStudentLight } from 'react-icons/pi';
 
 import { StackList } from '@/components/StackList';
-import { IconLink } from '@/components/ui/IconLink';
 import { Container } from '@/components/ui/Container';
+import { CertificateCard } from '@/components/ui/CertificateCard';
 
 import { SkillsProps } from './types';
 
 export const Skills: React.FC<SkillsProps> = ({
   data: { techStack, certificates },
 }) => {
-  const locale = useLocale();
   const t = useTranslations('Skills');
 
   return (
@@ -31,25 +30,9 @@ export const Skills: React.FC<SkillsProps> = ({
               {t('certificates.title')}
             </h3>
 
-            <ul className="flex w-full flex-col flex-wrap gap-[16px] md:flex-row">
+            <ul className="flex h-full w-full flex-col flex-wrap gap-6 md:flex-row xl:h-auto xl:gap-[16px]">
               {certificates.map((item, idx) => (
-                <li
-                  key={idx}
-                  className="certificate-card rounded-md bg-white-primary p-[16px] text-gray-primary shadow dark:bg-black-secondary dark:text-white-primary dark:shadow-white-shadow"
-                >
-                  <article className="flex flex-col gap-[8px]">
-                    <h4 className="text-center font-medium uppercase">
-                      {item.name}
-                    </h4>
-                    <div className="flex items-center justify-between">
-                      <p>{item.company.name}</p>
-                      <IconLink href={item.uploadUrl} type="download" />
-                    </div>
-                    <p className="text-primary">
-                      {locale === 'en' ? item.desc_en : item.desc_uk}
-                    </p>
-                  </article>
-                </li>
+                <CertificateCard data={item} key={idx} />
               ))}
 
               {/* Placeholder for desktop */}

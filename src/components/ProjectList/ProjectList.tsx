@@ -93,7 +93,7 @@ export const ProjectList: React.FC<ProjectListProps> = ({
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: shownProjects.length * 0.4 }}
           type="button"
-          className={`focus-shadow transition_prop mt-4 inline-block min-w-[54px] cursor-pointer self-center rounded-xl border-[1px] bg-white-primary px-[8px] py-[4px] text-[12px] font-medium text-white-primary shadow-sm hover:scale-110 hover:shadow focus:scale-110 dark:bg-black-secondary dark:shadow-white-shadow sm:text-[14px] md:mt-6 xl:text-[16px]`}
+          className={`focus-shadow transition_prop mt-4 inline-block min-w-[54px] cursor-pointer self-center rounded-xl border-[1px] bg-white-primary px-[8px] py-[4px] text-[12px] font-medium text-gray-primary shadow-sm hover:scale-110 hover:shadow focus:scale-110 dark:bg-black-secondary dark:text-white-primary dark:shadow-white-shadow sm:text-[14px] md:mt-6 xl:text-[16px]`}
           onClick={() => {
             setPage(page => page + 1);
           }}

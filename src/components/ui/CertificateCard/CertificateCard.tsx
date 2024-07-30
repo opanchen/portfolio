@@ -50,7 +50,7 @@ export const CertificateCard: React.FC<CertificateCardProps> = ({
       //   tabIndex={0}
       onFocus={() => setFocus(true)}
       onBlur={() => setFocus(false)}
-      className={`certificate-card h-[auto] ${focus ? 'certificate-card-flip' : ''}`}
+      className={`certificate-card ${focus ? 'certificate-card-flip' : ''}`}
     >
       <div className="certificate-card-content relative h-full w-full">
         {/* Front side */}
@@ -70,11 +70,13 @@ export const CertificateCard: React.FC<CertificateCardProps> = ({
         </div>
 
         {/* Back side */}
-        <div className="certificate-card-back">
+        <div className="certificate-card-back flex flex-col gap-2">
           <div className="mb-2 flex items-center justify-between">
             <Link
               href={company.companyUrl}
-              className="transition_prop font-extralight hover:scale-110 focus:scale-110"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              className="transition_prop font-extralight hover:scale-110 focus-visible:scale-110"
             >
               {company.name}
             </Link>

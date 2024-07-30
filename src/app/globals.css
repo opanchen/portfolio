@@ -81,7 +81,7 @@
 .certificate-card-front,
 .certificate-card-back {
   backface-visibility: hidden;
-  @apply absolute h-full w-full rounded-md bg-white-primary p-[16px] text-gray-primary shadow dark:bg-black-secondary dark:text-white-primary dark:shadow-white-shadow;
+  @apply absolute h-full min-h-[216px] w-full rounded-md bg-white-primary p-[16px] text-gray-primary shadow dark:bg-black-secondary dark:text-white-primary dark:shadow-white-shadow md:min-h-[256px] xl:min-h-[324px];
 }
 
 .certificate-card-back {
